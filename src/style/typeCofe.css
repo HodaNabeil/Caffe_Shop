@@ -1,0 +1,14 @@
+
+
+.typecofe{
+  backdrop-filter: blur(10px);
+  width: 100%;
+
+}
+
+.icontype {
+  padding: 5px 8px;
+  border-radius: 4px 6px ;
+  background-color: #ffdab93d;
+  cursor: pointer;
+}

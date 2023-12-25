@@ -81,7 +81,7 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     background: border-box;
-    background-color: #a49f9f;;
+    background-color: var(--mainColor);;
     padding: 20px;
     height: 100vh;
     z-index: 1000;
@@ -99,7 +99,7 @@ cursor: pointer;
     display: block;
     margin: 20px;
     margin-bottom: 30px;
-    color: #15110d;
+    color: #fff;
   }
   .mobile-icon{
     display: block;
@@ -108,7 +108,7 @@ cursor: pointer;
     top: 34px;
   }
   .header .nav-link:hover::before {
-    background-color: #15110d;
+    background-color: #fff;
   }
 }
 

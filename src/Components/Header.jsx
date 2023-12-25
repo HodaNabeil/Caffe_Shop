@@ -1,6 +1,6 @@
 
 import '../all.min.css'
-import {NavLink} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 import '../style/header.css'
 import { useState } from 'react'
 function Header() {
@@ -20,26 +20,29 @@ function Header() {
   }
   const links =[
   {name:'Home' ,to:'/' ,icon:  <i className="fa-solid fa-house"></i>},
-  {name:'CoffeMenu' ,to:'menu' , icon: <i className="fa-solid fa-cart-shopping"></i>},
-  {name:'Contact us ' , to: 'contact',icon:<i className="fa-regular fa-user"></i>},
-  {name:'About Us ' , to: 'about',icon:<i className="fa-regular fa-user"></i>},
+  {name:'CoffeMenu' ,to:'/menu' , icon: <i className="fa-solid fa-cart-shopping"></i>},
+  {name:'Contact us ' , to: '/contact',icon:<i className="fa-regular fa-user"></i>},
+  {name:'About Us ' , to: '/about',icon:<i className="fa-regular fa-user"></i>},
   ]
   return (
     <header className="header">
-        <div className='logo'>
+        <Link 
+          to={'/'}
+          className='logo'>
           <h4>Flavored <span><i className="fa-solid fa-mug-saucer"></i> </span></h4>
           <span>wake up to something special  </span>
-        </div>
+        </Link>
         <nav>
           <ul className={`nav-links ${navOpen ===true ? 'nav-links ' :' nav-links show '}`}>
               {
                 links.map((link ,index) => {
                 return(
                 <li key={index} onClick={ ()=> hundleActiveLiks(link.name)}   >
-                  <NavLink to={link.to} 
+                  <Link to={link.to} 
                     className= {` nav-link ${activeLinkes === link.name ? 'active' : ' '}`}>
-                    <span className='mobile-icon-nav'>{link.icon}</span> {link.name} 
-                  </NavLink>
+                    <span className='mobile-icon-nav'>{link.icon}</span>
+                    {link.name} 
+                  </Link>
                 </li>
                 ) 
                 })

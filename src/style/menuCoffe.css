@@ -1,0 +1,13 @@
+
+
+
+
+.menu-backgouned {
+  background-image: url('../IMg/hero_2.jpg');
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position:center;
+  object-fit: cover;
+  overflow-x: hidden;
+  padding-bottom: 40px;
+}

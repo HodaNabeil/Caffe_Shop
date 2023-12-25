@@ -1,7 +1,12 @@
 .home_page {
-  background-image: url('../IMg/backgroudHome.webp');
+  background-image: url('../IMg/Asa.jpg');
   width: 100%;
   object-fit: cover;
+  background-position: center;
   overflow-x: hidden;
+  background-repeat: no-repeat;
+  max-width: 1640px;
+  margin: auto;
+
 }
 

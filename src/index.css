@@ -1,11 +1,15 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;500;600&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Poppins:wght@200;300;400;500;600&family=Roboto:wght@300;400;500;700&family=Rubik+Bubbles&family=Rubik:wght@400;500;600&family=Saira+Extra+Condensed:wght@300;400&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;500;600&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Poppins:wght@200;300;400;500;600&family=Roboto:wght@300;400;500;700&family=Rubik+Bubbles&family=Rubik:wght@400;500;600&family=Saira+Extra+Condensed:wght@300;400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&family=Sevillana&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;500;600&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Poppins:wght@200;300;400;500;600&family=Roboto:wght@300;400;500;700&family=Rubik+Bubbles&family=Rubik:wght@400;500;600&family=Saira+Extra+Condensed:wght@300;400&display=swap');
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
+
+
+  :root {
+    --mainColor:#220100;
+  }
 * {
   padding: 0;
   margin: 0;
@@ -20,17 +24,35 @@
   font-family: "Kaushan Script";
 }
 
+.font_3 {
+  font-family: 'Sevillana', cursive;
+}
+/* /// */
+
+
+
 @layer base {
   .mainbtn {
     background: #220100;
     color: #fff;
     padding: 8px 10px;
     border-radius: 50px;
+    border: 2px solid transparent;
+  }
+  .secondbtn {
+    background: #220100;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 50px;
+    border: 2px solid transparent;
   }
 }
-
+.mainbtn:hover {
+  background-color: transparent;
+  border: 2px solid  var(--mainColor);
+}
 @layer base {
   .mainColor {
-    color:  #220100;;
+    color:  var(--mainColor);
   }
 }

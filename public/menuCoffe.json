@@ -4,7 +4,7 @@
     "name":"americano",
     "description":"Lorem ipsum dolor sit amet consectetur.", 
     "price":2.52,
-    "image":"/IMgCoffe/menu-1.webp",
+    "image":"/IMgCoffe/coffeCa.png",
     "category":"americano"
   }
   ,  {
@@ -21,7 +21,7 @@
     "name":"americano",
     "description":"Lorem ipsum dolor sit amet consectetur.", 
     "price":4,
-    "image":"/IMgCoffe/menu3.webp",
+    "image":"/IMgCoffe/coffeCa_3.png",
     "category":"americano"
   }
   ,
@@ -30,7 +30,7 @@
     "name":"cappuccino",
     "description":"Lorem ipsum dolor sit amet consectetur.", 
     "price":2.52,
-    "image":"/IMgCoffe/menu4.webp",
+    "image":"/IMgCoffe/coffe_e-.png",
     "category":"cappuccino"
   }
   ,
@@ -48,7 +48,7 @@
     "name":"cappuccino",
     "description":"Lorem ipsum dolor sit amet consectetur.", 
     "price":6.30,
-    "image":"/IMgCoffe/menu8.webp",
+    "image":"/IMgCoffe/coffeCp_3.png",
     "category":"cappuccino"
   }
   ,
@@ -57,7 +57,7 @@
     "name":"turkish",
     "description":"Lorem ipsum dolor sit amet consectetur.", 
     "price":6,
-    "image":"/IMgCoffe/menu9.webp",
+    "image":"/IMgCoffe/coffe_e-.png",
     "category":"turkish"
   }
   ,
@@ -66,7 +66,7 @@
     "name":"turkish",
     "description":"Lorem ipsum dolor sit amet consectetur.", 
     "price":2.52,
-    "image":"/IMgCoffe/menu10.webp",
+    "image":"/IMgCoffe/coffeCa.png",
     "category":"turkish"
   }
   ,
@@ -75,7 +75,7 @@
     "name":"turkish",
     "description":"Lorem ipsum dolor sit amet consectetur.", 
     "price":5,
-    "image":"/IMgCoffe/menu12.webp",
+    "image":"/IMgCoffe/menu-2.webp",
     "category":"turkish"
   }
 ]

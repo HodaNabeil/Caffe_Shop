@@ -1,9 +1,6 @@
 
 .landing {
-  backdrop-filter: blur(10px);
-  background: transparent;
   width: 100%;
-  z-index: 500;
   position: relative;
   padding-bottom: 80px;
   height: calc(100vh - 95px);

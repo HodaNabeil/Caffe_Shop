@@ -10,7 +10,7 @@ function Landing() {
     ]
   return (
     <div 
-      className=" landing  max-w-[1640px] m-auto px-[60px] 
+      className=" landing  container 
         py-6  flex justify-center   md:justify-between     ">
       <div>
         <h1 className='mainColor font_2  text-[30px] md:text-[45px]  font-bold'>

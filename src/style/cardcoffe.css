@@ -1,0 +1,54 @@
+
+:root {
+  --mainColor:#220100;
+}
+
+
+.card-cofe {
+  background-color: #f4e8d64d;
+  padding: 20px;
+  margin: 15px  ;
+  border-radius: 35px;
+  position: relative;
+  height: 300px;
+  margin-bottom: 40px;
+}
+.image {
+  padding: 30px 0  40px;
+}
+.container-menu  img {
+  width: 180px;
+  position: absolute;
+  top: -70px;
+  padding: 30px;
+  margin: 20px 0;
+}
+.second-color {
+  color: #220100a6;
+}
+
+/* Icon */
+
+.add-card {
+  position: relative;
+}
+.add-card::after {
+  content: 'Add to Coffe';
+  color: #fff;
+  font-size: 10px;
+  position: absolute;
+  background-color:var(--mainColor) ;
+  padding: 6px 8px;
+  width: 50px;
+  height: 30px;
+  left: 0;
+  top: -40px;
+  border-radius: 3px;
+  font-family: 'Roboto';
+  display: none;
+  font-weight: normal;
+}
+
+.add-card:hover::after {
+  display: block;
+}

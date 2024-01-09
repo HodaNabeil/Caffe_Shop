@@ -1,7 +1,16 @@
+import Header from "../Components/Header"
+
+
+import '../style/cardOrder.css'
 function Order() {
   return (
-    <div>
-      Order
+    <div >
+        <Header />
+
+        <div className=" card ">
+        Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order      Order
+          
+        </div>
     </div>
   )
 }

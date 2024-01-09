@@ -52,7 +52,7 @@ function Header() {
             <i className={`mobile-icon fa-solid ${mobile ?  '  fa-bars':' fa-xmark' }`}></i>
           </div>
         </nav>
-        <button className=' mainbtn'>Coffee shopp</button>
+        <Link to={'/card'} className=' mainbtn hover:text-[#220100]'>Coffee shopp</Link>
         
     </header>
   )

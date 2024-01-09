@@ -4,7 +4,7 @@ import   {Link}from 'react-router-dom';
 
 function TypeCofe() {
   return (
-    <div className="  typecofe  max-w-[1640px] m-auto px-[60px]   ">
+    <div className="  typecofe  container    ">
         <div  className=' grid md:grid-cols-2 lg:grid-cols-3  pt-[80px] pb-[70px]    gap-5 relative '>
           <div  className='bg-[#f4e8d64d] p-[20px] pt-[80px]  rounded-[35px] relative h-[300px]'>
             <img 

@@ -1,4 +1,6 @@
-
+:root {
+  --mainColor:#220100;
+}
 
 
 
@@ -11,3 +13,39 @@
   overflow-x: hidden;
   padding-bottom: 40px;
 }
+
+
+.container-btn {
+  background-color: #100908;
+  max-width: 400px;
+  padding: 10px 15px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px  auto;
+  border-radius: 50px;
+  color: #fff;
+  gap: 20px;
+  box-shadow: 0px 1px 0px 8px #f4e8d64d;
+}
+.container-btn .active {
+  color: var(--mainColor);
+  background-color: #fff;
+  padding: 4px 6px;
+  border-radius: 50px;
+}
+.container-btn > button {
+  font-family: "Kaushan Script";
+  letter-spacing: 1px;
+}
+
+/* M */
+@media (min-width:768px) {
+  .container-btn {
+    max-width: 450px;
+  }
+  .container-btn > button {
+    font-size: 20px;
+  }
+}
+

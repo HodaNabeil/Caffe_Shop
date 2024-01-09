@@ -14,18 +14,28 @@ import Header from './Components/Header';
 import { Provider } from 'react-redux'
 import { store } from './Store/store';
 import HeroMenu from './Components/HeroMenu';
+import Order from './Page/Order';
 
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>
-      <Home/></div>,
+    element: 
+      <>
+      <Home/>
+      </>
+  },
+  {
+    path: "/home",
+    element: 
+      <>
+      <Home/>
+      </>
   },
   {
     path: "/about",
-    element: <div className='home_page'>
+    element: <div>
       <Header/>
       <About/>
       </div>,
@@ -34,10 +44,10 @@ const router = createBrowserRouter([
     path: "/menu",
     element: 
     < >
-        <div className='menu-backgouned'>
-          <HeroMenu/>
+        <div >
+            <CoffeMenu/>
         </div>
-        <CoffeMenu/>
+    
     </>,
   },
   {
@@ -46,6 +56,13 @@ const router = createBrowserRouter([
           <Header/>
   
       </div>,
+  }
+  ,{
+    path:'/card',
+    element: <>
+    
+    <Order/>
+    </>
   }
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));

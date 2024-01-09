@@ -8,9 +8,11 @@ import '../style/Home.css'
 function Home() {
   return (
     <div className="home_page">
-      <Header/>
-      <Landing/>
-      <TypeCofe/>
+      <div className='background-blur'>
+        <Header/>
+        <Landing/>
+        <TypeCofe/>
+      </div>
     </div>
   )
  }

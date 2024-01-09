@@ -84,7 +84,7 @@
   }
   .hero-img-rigth::before{
     width: 245px;
-    height: 525px;
+    height: 435px;
   }
 }
 @media (min-width:991px) {

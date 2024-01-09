@@ -20,6 +20,11 @@
   text-decoration: none;
 }
 
+.container {
+  padding: 0 60px;
+  margin: 0;
+  max-width: 1640px;
+}
 .font_2 {
   font-family: "Kaushan Script";
 }
@@ -29,7 +34,13 @@
 }
 /* /// */
 
-
+.background-blur {
+  backdrop-filter: blur(5px);
+  background: transparent;
+}
+.min-color {
+  color: var(--mainColor);
+}
 
 @layer base {
   .mainbtn {
@@ -45,6 +56,16 @@
     padding: 8px 10px;
     border-radius: 50px;
     border: 2px solid transparent;
+  }
+  .price-btn {
+    color: #fff;
+    background-color: var(--mainColor);
+    padding: 8px 10px;
+    width: fit-content;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
   }
 }
 .mainbtn:hover {

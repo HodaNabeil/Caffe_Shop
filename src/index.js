@@ -15,6 +15,7 @@ import { Provider } from 'react-redux'
 import { store } from './Store/store';
 import HeroMenu from './Components/HeroMenu';
 import Order from './Page/Order';
+import Cantact from './Page/Cantact';
 
 
 
@@ -52,17 +53,24 @@ const router = createBrowserRouter([
   },
   {
     path: "/contact",
-    element: <div className='home_page'>
+    element: 
+        <>
+        <div className='home_page'>
           <Header/>
-  
-      </div>,
+          </div>
+        <Cantact/>
+        </>
+  ,
   }
   ,{
     path:'/card',
-    element: <>
-    
-    <Order/>
-    </>
+    element:  <div className=' overflow-hidden'>
+        <div className='home_page ' style={{overflow:'visible'}}>
+            <Header/>
+      </div>
+      <Order/>
+    </div> 
+        
   }
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));

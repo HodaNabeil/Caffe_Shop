@@ -23,6 +23,12 @@
   padding: 30px;
   margin: 20px 0;
 }
+
+@media (max-width:767px)  {
+  .container-menu  img {
+    width: 150px;
+  }
+}
 .second-color {
   color: #220100a6;
 }
@@ -51,4 +57,61 @@
 
 .add-card:hover::after {
   display: block;
+}
+
+@media (min-width:767px) and (max-width:795px) {
+  .card-cofe .price-btn {
+    bottom: -50px !important;
+  }
+}
+
+@media  (max-width:600px) {
+  .card-cofe .price-btn {
+    bottom: -50px !important;
+  }
+}
+
+@media (max-width:576px) {
+  .container-menu   {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+  .card-cofe  {
+    height: 195px;
+  }
+  .image {
+    padding: 20px 0;
+  }
+  .container-menu  img {
+    width: 140px;
+  }
+  .card-cofe > div .des {
+    font-size: 15px;
+  }
+  .card-cofe .price-btn  {
+    font-size: 12px;
+    bottom: -24px !important;
+    margin-left: 64px !important;
+  }
+  
+}
+
+@media (max-width:442px) {
+  .card-cofe .price-btn  {
+    font-size: 12px;
+    bottom: -24px !important;
+    margin-left: 34px !important;
+  }
+  .card-cofe div:nth-child(3) {
+    display: flex !important;
+    justify-content: flex-start !important;
+
+  }
+  .card-cofe .image {
+    padding: 10px 0;
+
+  }
+  .card-cofe > div .des {
+    padding-bottom: 0;
+  }
 }

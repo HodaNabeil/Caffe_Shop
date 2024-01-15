@@ -3,7 +3,7 @@
   width: 100%;
   object-fit: cover;
   background-position: center;
-  overflow-x: hidden;
+  overflow: hidden;
   background-repeat: no-repeat;
   max-width: 1640px;
   margin: auto;

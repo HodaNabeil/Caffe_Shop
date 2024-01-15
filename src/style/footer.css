@@ -1,0 +1,34 @@
+
+:root {
+  --mainColor:#220100;
+}
+
+.footer  h3 {
+  color: var(--mainColor);
+  font-weight: bold;
+font-size: 20px;
+}
+
+@media (min-width:767px) and (max-width:992px) {
+  .footer  h3 {
+    font-size: 18px;
+  }
+}
+
+.footer  > div {
+  padding: 10px;
+}
+.footer  > div a {
+  color: #220100d4;
+  display: block;
+  padding: 4px 0;
+}
+@media (min-width:767px) and (max-width:992px) {
+  .footer  > div a{
+    font-size: 15px;
+  }
+}
+.footer > div:not(:first-child) a:hover {
+  padding-left: 20px;
+  transition: padding-left 0.4s;
+}

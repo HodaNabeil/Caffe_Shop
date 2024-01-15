@@ -1,0 +1,19 @@
+
+
+
+function CardWhy({title , img}) {
+  return (
+    <div className=" card-why  p-[20px] border border-[#ff7900] border-solid  
+      rounded-[8px]  mb-[25px] cursor-pointer">
+      <img 
+        className=" w-[150px]  rounded-[50%] p-[20px] block m-auto"
+        src={img} alt={title} />
+      <div>
+        <h3 className=" text-[#ffff] font_3 text-[22px]  tracking-[1px]">{title}</h3>
+        <p className=" text-[#7777] text-[17px] font-normal  leading-[1.6] mt-[5px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab cupiditate dolorum vero, assumenda ad nulla! Quibusdam fuga rerum eveniet aperiam!</p>
+      </div>
+    </div>
+  )
+}
+
+export default CardWhy

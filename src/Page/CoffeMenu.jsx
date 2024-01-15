@@ -8,15 +8,25 @@ import Header from '../Components/Header'
 import HeroMenu from '../Components/HeroMenu'
 import BtnFilter from '../Components/BtnFilter'
 import CardCoffe from '../Components/CardCoffe'
+import WhyUs from '../Components/WhyUs'
+import Footer from '../Components/Footer'
+
+
 
 
 
 function CoffeMenu() {
   const dispatch= useDispatch()
   const coffemenu = useSelector((state)=> state.coffe.products);
+
+  const [category, setCategory] = useState("americano")
+
   const [filter ,setFilter ] =useState(coffemenu);
 
-  const btnmenu = [...new Set(coffemenu.map((val)=>val.category))];
+  const filterProducts = 
+  category === 'americano' 
+  ?filter.filter((product)=>product.category === 'americano')
+  :filter.filter((product)=>product.category ===  category)
 
   function filterType (cat) {
   const filtered= coffemenu.filter((type )=> type.category === cat);
@@ -33,32 +43,40 @@ function CoffeMenu() {
   },[coffemenu])
 
   return (
+    <div>
     <div className='menu-backgouned '>
       <div className='background-blur '>
         <Header />
         <HeroMenu/>
-        <div className='  container pt-[30px]'>
+        <div className='container pt-[30px]'>
           <h2 
             className=' flex justify-center items-center 
-            font_2 text-[30px] md:text-[30px]  text-[#fff]  mb-[50px]' >
-              The best <span className='ml-[10px]  text-[#fff] font-bold font_3'>coffee</span>
+            font_2 text-[30px] md:text-[35px]  text-[#fff]  mb-[50px]' >
+              The best <span className='ml-[10px]  text-[#220100] font-bold font_3'>coffee</span>
           </h2>
-        
-          <BtnFilter  btnmenu={btnmenu}  filterType= {filterType} setFilter={setFilter}/>
-
-            <div className='container-menu   grid grid-cols-2 md:grid-cols-3 pt-[40px]'>
-              {
-                filter.map((cofe ,index) => {
-                  return <div  key={index} >
-                                <CardCoffe   cofe={cofe}   />
-                          </div>
-                })
-              }
-            </div>
+          <BtnFilter setCategory={setCategory}  filterType= {filterType} setFilter={setFilter}/>
+          <div className='container-menu   grid   grid-cols-2 md:grid-cols-3 pt-[40px]'>
+            {
+              filterProducts.map((cofe ,index) => {
+                return <div  key={index} >
+                              <CardCoffe   cofe={cofe}   />
+                        </div>
+              })
+            }
+          </div>
         </div>
-
       </div>
     </div>
+
+    <WhyUs/>
+    <div className='home_page'>
+      <div className='background-blur'>
+        <Footer/>
+      </div>
+    
+    </div> 
+
+  </div>
   )
 }
 

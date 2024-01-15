@@ -10,8 +10,7 @@
   background-repeat: no-repeat;
   background-position:center;
   object-fit: cover;
-  overflow-x: hidden;
-  padding-bottom: 40px;
+  overflow: hidden;
 }
 
 
@@ -31,7 +30,7 @@
 .container-btn .active {
   color: var(--mainColor);
   background-color: #fff;
-  padding: 4px 6px;
+  padding: 4px 8px;
   border-radius: 50px;
 }
 .container-btn > button {
@@ -48,4 +47,3 @@
     font-size: 20px;
   }
 }
-

@@ -19,7 +19,7 @@ function Order() {
                 Your  <span className= 'font_3 text-[#ff7900] '> order </span> is read
             </h2>
 
-            <div className=' flex  flex-col sm:flex-row justify-between items-center gap-x-7 '>
+            <div className=' flex  flex-col sm:flex-row justify-between gap-x-7 '>
               <LeftOrderPage/>
               <RightOrder/>
             </div>

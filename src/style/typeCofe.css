@@ -8,3 +8,14 @@
   background-color: #ffdab93d;
   cursor: pointer;
 }
+.typecofe .card-type {
+  margin-bottom: 60px;
+}
+.typecofe div:nth-child(1) img {
+  top: -140px !important;
+
+}
+.typecofe div:nth-child(2) img {
+  top: -240px !important;
+
+}

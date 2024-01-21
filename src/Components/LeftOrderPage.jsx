@@ -5,7 +5,6 @@ function LeftOrderPage() {
 
   const order =useSelector((state)=> state.order);
   const dispatch= useDispatch()
-  console.log(order)
 
   const handleIncrementQuantity = (productId) => {
     dispatch(incrementQuantity({productId}));

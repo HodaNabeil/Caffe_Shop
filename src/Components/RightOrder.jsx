@@ -4,11 +4,11 @@ import '../style/right-order.css'
 
 function RightOrder() {
   return (
-    <div className=' right-order  max-w-full  w-[240px] h-[325px]  my-[40px] bg-[#8b5f3a]  '>
+    <div className=' right-order  max-w-full  w-[240px] h-[325px]  my-[40px] bg-[#b3895f] '>
   
-        <div className="  p-[10px]  bg-[#a4997d] ">
+        <div className="  p-[10px]  bg-[#b3895f] ">
           <h3 
-            className=" font_3     text-[25px]   text-center font-bold  " 
+            className=" font_3  bg-[#c7996a]  rounded-[50px] mainColor  text-[25px]   text-center font-bold  " 
           >
             Order details
           </h3>

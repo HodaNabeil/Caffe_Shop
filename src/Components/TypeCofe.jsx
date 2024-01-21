@@ -1,59 +1,49 @@
-import '../style/typeCofe.css'
+
+import '../style/typecofe.css'
 
 import   {Link}from 'react-router-dom';
-import Icon from './Icon';
+import CardTypeCofe from './CardTypeCofe';
+import { useState } from 'react';
 
 function TypeCofe() {
+
+    const [productType,setProductType] =useState([
+      {
+        id:10,
+        name:"Americano",
+        des:"Lorem ipsum dolor sit amet consectetur",
+        price:10,
+        imge:"typec1.webp",
+      },
+      {
+        id:11,
+        name:"Cappuccino",
+        des:"Lorem ipsum dolor sit amet consectetur",
+        price:10,
+        imge:"type2.webp",
+      }
+    ])
   return (
     <div className="  typecofe  container    ">
-        <div  className=' grid md:grid-cols-2 lg:grid-cols-3  pt-[80px] pb-[70px]    gap-5 relative '>
-          <div  className='bg-[#f4e8d64d] p-[20px] pt-[80px]  rounded-[35px] relative h-[300px]'>
-            <img 
-              className='w-[250px] absolute top-[-50px]  flex  justify-center items-center m-auto '
-              src={require(`../IMg/typec1.webp`)} 
-              alt="Coffee" />
-            <div  className='pt-[20px]'>
-              <h4 className=' mainColor   font-medium text-[18px]' >Americano</h4>
-              <p className='text-[#220100db] text-sm'>Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-            <div 
-              className= ' mainColor flex  items-center justify-center  gap-[20px] my-[20px] '>
-              <Icon/>
-            </div>
-            <button 
-              className='secondbtn absolute bottom-[-20px] 
-                m-auto left-[30%] w-[60px] py-[6px] px-[8px]  text-sm  cursor-pointer '>
-              2.52$
-            </button>
-          </div>
-
-          <div  className='bg-[#f4e8d64d] p-[20px] pt-[80px] my-[40px] md:m-[0]  rounded-[35px] relative h-[300px]'>
-            <img 
-              className='w-[250px] absolute top-[-150px]  flex  justify-center items-center m-auto '
-              src={require(`../IMg/type2.webp`)} 
-              alt="Coffee" />
-            <div  className='pt-[20px]'>
-              <h4 className=' mainColor   font-medium text-[18px]' >Cappuccino</h4>
-              <p className='text-[#220100db] text-sm'>Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-            <div  className= ' mainColor flex  items-center justify-center  gap-[20px] my-[20px] '>
-              <Icon />
-            </div>
-            <button 
-              className=' secondbtn absolute bottom-[-20px] 
-                m-auto left-[30%] w-[60px] py-[6px] px-[8px]  text-sm '>
-              2.52$
-              
-            </button>
-          </div>
-          <div className=''>
+        <div  className=' grid sm:grid-cols-2 lg:grid-cols-3  pt-[80px] pb-[70px]  
+          gap-5 relative '>
+          {
+            productType.map((product)=>{
+              return (
+                <CardTypeCofe  imge={product.imge} name={product.name} price={product.price}
+                des={product.des} key={product.id} />
+              )
+            })
+          }
+          <div >
             <h2 className='mainColor text-[30px]  font-bold font_2 '>
               Lorem ipsum dolor sit amet consectetur adipisicin
             </h2>
             <p 
               className='max-w-[200px] text-[#000000e0] font-medium'
               >
-              Lorem ipsum dolor sit amet consectetur adipisicinLorem ipsum dolor sit amet consectet
+              Lorem ipsum dolor sit amet consectetur adipisicinLorem ipsum dolor
+              sit amet consectet
             </p>
             <Link to={'/menu'}
               className='mainbtn tracking-[1px]  

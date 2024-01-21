@@ -44,7 +44,7 @@ function CoffeMenu() {
 
   return (
     <div>
-    <div className='menu-backgouned '>
+    <div className='menu-backgouned menu-coffe '>
       <div className='background-blur '>
         <Header />
         <HeroMenu/>

@@ -10,6 +10,13 @@
   bottom: -6px;
 
 }
+
+
+@media (max-width:768px) {
+  .why > .header-why::before {
+    
+  }
+}
 /* Card Why choose our coffee */
 
 .card-why:hover {

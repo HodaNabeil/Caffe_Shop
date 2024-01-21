@@ -21,9 +21,18 @@
 }
 
 .container {
-  padding: 0 60px;
+  padding: 0 30px;
   margin: 0 auto;
   max-width: 1640px;
+}
+
+
+@media (max-width:768px) {
+  
+.container {
+  padding: 0 20px;
+}
+
 }
 .font_2 {
   font-family: "Kaushan Script";
@@ -72,10 +81,17 @@
     justify-content: space-between;
     align-items: center;
   }
+  .element-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .mainbtn:hover {
   background-color: transparent;
   border: 2px solid  var(--mainColor);
+  letter-spacing: 2px;
+  transition: all 0.4s;
 }
 @layer base {
   .mainColor {

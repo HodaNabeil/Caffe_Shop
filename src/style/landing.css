@@ -2,7 +2,27 @@
 .landing {
   width: 100%;
   position: relative;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
   height: calc(100vh - 95px);
   padding-top: 100px;
+}
+@media (max-width:767px) {
+  .landing .landing-img  {
+    width: 250px;
+  } 
+}
+@media (max-width:577px) {
+  .landing div:first-child h1 {
+    font-size: 25px;
+  }
+  .landing div:first-child button {
+    width: 100px;
+    font-weight: normal !important;
+    font-size: 14px !important;
+    margin:  25px 0 !important ;
+  }
+  .landing .landing-img  {
+    width: 200px;
+  }
+
 }

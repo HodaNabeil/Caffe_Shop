@@ -11,8 +11,8 @@ function Landing() {
   return (
     <div 
       className=" landing  container 
-        py-6  flex justify-center   md:justify-between     ">
-      <div>
+            md:py-5  flex  justify-between     ">
+      <div className=' w-[48%]'>
         <h1 className='mainColor font_2  text-[30px] md:text-[45px]  font-bold'>
           Caffe <br/>
           The Best For You 
@@ -25,7 +25,7 @@ function Landing() {
             hover:border-[2px]  hover:border-solid   hover:border-[#220100] ">
               View Menu
         </button>
-        <div  className=' flex   gap-x-[30px]'>
+        <div  className=' flex  gap-x-[20px] md:gap-x-[30px]'>
           {
             icons.map((icon,index)=> {
               return(
@@ -40,9 +40,9 @@ function Landing() {
           
         </div>
       </div>
-      <div>
+      <div className=' w-[48%]'>
         <img 
-        className='  hidden sm:flex  max-w-full md:max-w-[280px] lg:max-w-[400px]'
+        className='  landing-img   md:max-w-[280px] lg:max-w-[400px]'
         src={require(`../IMg/landing.webp`)} alt="img_cofee" />
       </div>
     </div>

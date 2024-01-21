@@ -72,6 +72,37 @@ const router = createBrowserRouter([
     </div> 
         
   }
+  ,{
+    path:'/account',
+    element:  <div className=' overflow-hidden'>
+        <div className='home_page ' style={{overflow:'visible'}}>
+            <Header/>
+      </div>
+    
+    </div> 
+        
+  }
+  ,{
+    path:'/appetizers',
+    element:  <div className=' overflow-hidden'>
+        <div className='home_page ' style={{overflow:'visible'}}>
+            <Header/>
+      </div>
+    
+    </div> 
+        
+  }
+  ,{
+    path:'/heart',
+    element:  <div className=' overflow-hidden'>
+        <div className='home_page ' style={{overflow:'visible'}}>
+            <Header/>
+      </div>
+    
+    </div> 
+        
+  }
+  
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -4,7 +4,7 @@
 }
 
 
-.card-cofe {
+.menu-coffe .card-cofe {
   background-color: #f4e8d64d;
   padding: 20px;
   margin: 15px  ;
@@ -13,11 +13,11 @@
   height: 300px;
   margin-bottom: 40px;
 }
-.image {
+.menu-coffe .image {
   padding: 30px 0  40px;
 }
-.container-menu  img {
-  width: 180px;
+.menu-coffe .container-menu  img {
+  width: 210px;
   position: absolute;
   top: -70px;
   padding: 30px;
@@ -26,7 +26,7 @@
 
 @media (max-width:767px)  {
   .container-menu  img {
-    width: 150px;
+    width: 205px !important;
   }
 }
 .second-color {
@@ -61,15 +61,10 @@
 
 @media (min-width:767px) and (max-width:795px) {
   .card-cofe .price-btn {
-    bottom: -50px !important;
+    bottom: -70px !important;
   }
 }
 
-@media  (max-width:600px) {
-  .card-cofe .price-btn {
-    bottom: -50px !important;
-  }
-}
 
 @media (max-width:576px) {
   .container-menu   {
@@ -77,20 +72,20 @@
     grid-template-columns: 1fr !important;
   }
   .card-cofe  {
-    height: 195px;
+    height: 233px !important;
   }
   .image {
     padding: 20px 0;
   }
   .container-menu  img {
-    width: 140px;
+    width: 185px !important;
   }
   .card-cofe > div .des {
     font-size: 15px;
   }
   .card-cofe .price-btn  {
     font-size: 12px;
-    bottom: -24px !important;
+    bottom: -30px !important;
     margin-left: 64px !important;
   }
   

@@ -1,6 +1,6 @@
 
 .card-order-left {
-  background-color: #a77245;
+  background-color: #c7996a;
   margin: 10px;
   padding: 20px;
   border-radius: 8px;
@@ -23,13 +23,15 @@
   bottom: 0;
   cursor: pointer;
 }
-.card-order-left  .imge  img {
-  width: 200px;
-  padding: 10px;
+.card-order-left  .imge   {
+  width: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+img {
+  max-width: 100%;
 }
 .card-order-left  .container-qauntity {
   display: flex;

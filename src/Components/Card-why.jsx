@@ -10,7 +10,7 @@ function CardWhy({title , img}) {
         src={img} alt={title} />
       <div>
         <h3 className=" text-[#ffff] font_3 text-[22px]  tracking-[1px]">{title}</h3>
-        <p className=" text-[#7777] text-[17px] font-normal  leading-[1.6] mt-[5px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab cupiditate dolorum vero, assumenda ad nulla! Quibusdam fuga rerum eveniet aperiam!</p>
+        <p className=" text-[#fff7] text-[17px] font-normal  tracking-[1px]  leading-[1.7] mt-[5px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab cupiditate dolorum vero, assumenda ad nulla! Quibusdam fuga rerum eveniet aperiam!</p>
       </div>
     </div>
   )

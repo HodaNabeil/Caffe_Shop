@@ -3,7 +3,6 @@
   --mainColor:#220100;
 }
 
-
 .menu-coffe .card-cofe {
   background-color: #f4e8d64d;
   padding: 20px;
@@ -14,19 +13,27 @@
   margin-bottom: 40px;
 }
 .menu-coffe .image {
-  padding: 30px 0  40px;
+  padding: 30px ;
+  position: relative;
 }
-.menu-coffe .container-menu  img {
-  width: 210px;
+.menu-coffe .container-menu  .card-cofe img {
+  width: 180px;
   position: absolute;
   top: -70px;
-  padding: 30px;
   margin: 20px 0;
+  max-width: 100%;
+  height: auto;
 }
 
 @media (max-width:767px)  {
+  .menu-coffe .card-cofe {
+    height: 275px;
+  }
   .container-menu  img {
-    width: 205px !important;
+    width: 160px !important;
+  }
+  .menu-coffe .image {
+    padding: 20px;
   }
 }
 .second-color {
@@ -54,17 +61,14 @@
   display: none;
   font-weight: normal;
 }
-
 .add-card:hover::after {
   display: block;
 }
-
 @media (min-width:767px) and (max-width:795px) {
   .card-cofe .price-btn {
-    bottom: -70px !important;
+    bottom: -80px !important;
   }
 }
-
 
 @media (max-width:576px) {
   .container-menu   {
@@ -72,13 +76,10 @@
     grid-template-columns: 1fr !important;
   }
   .card-cofe  {
-    height: 233px !important;
+    height: 210px !important;
   }
   .image {
     padding: 20px 0;
-  }
-  .container-menu  img {
-    width: 185px !important;
   }
   .card-cofe > div .des {
     font-size: 15px;
@@ -91,7 +92,10 @@
   
 }
 
-@media (max-width:442px) {
+@media (max-width:444px) {
+  .menu-coffe .card-cofe {
+    height: 178px !important;
+  }
   .card-cofe .price-btn  {
     font-size: 12px;
     bottom: -24px !important;
@@ -100,11 +104,12 @@
   .card-cofe div:nth-child(3) {
     display: flex !important;
     justify-content: flex-start !important;
-
   }
   .card-cofe .image {
     padding: 10px 0;
-
+  }
+  .card-cofe .image  img {
+    width: 140px !important;
   }
   .card-cofe > div .des {
     padding-bottom: 0;

@@ -12,9 +12,6 @@ import WhyUs from '../Components/WhyUs'
 import Footer from '../Components/Footer'
 
 
-
-
-
 function CoffeMenu() {
   const dispatch= useDispatch()
   const coffemenu = useSelector((state)=> state.coffe.products);
@@ -73,9 +70,7 @@ function CoffeMenu() {
       <div className='background-blur'>
         <Footer/>
       </div>
-    
     </div> 
-
   </div>
   )
 }

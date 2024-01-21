@@ -1,9 +1,6 @@
 :root {
   --mainColor:#220100;
 }
-
-
-
 .menu-backgouned {
   background-image: url('../IMg/hero_2.jpg');
   width: 100%;
@@ -12,11 +9,9 @@
   object-fit: cover;
   overflow: hidden;
 }
-
-
 .container-btn {
   background-color: #100908;
-  max-width: 400px;
+  max-width: 380px;
   padding: 10px 15px ;
   display: flex;
   justify-content: center;
@@ -37,13 +32,16 @@
   font-family: "Kaushan Script";
   letter-spacing: 1px;
 }
+/* mobeil */
 
-/* M */
 @media (min-width:768px) {
-  .container-btn {
-    max-width: 450px;
-  }
   .container-btn > button {
     font-size: 20px;
   }
+}
+@media (max-width:576px) {
+  .container-btn {
+    max-width: 300px !important;
+  }
+  
 }

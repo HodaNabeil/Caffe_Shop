@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 
+
+import '../style/menuCoffe.css'
 function BtnFilter({ filterType,setCategory }) {
   const coffemenu = useSelector((state) => state.coffe.products);
   const [activeButton, setActiveButton] = useState('americano');

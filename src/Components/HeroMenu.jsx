@@ -1,12 +1,13 @@
 
-import "../style/heromenu.css";
 import { Link } from "react-router-dom";
+import '../style/heromenu.css'
 function HeroMenu() {
   return (
       <div
-        className=" container   container-hero grid grid-cols-2
-        gap-[30px] md:gap-[80px]   py-[30px] pb-[50px] sm:pb-[70px]" >
-          <div>
+        className=" container  hero-menu
+            flex  justify-between items-center gap-x-[50px]
+            py-[30px] pb-[50px] sm:pb-[70px]" >
+          <div className=" w-[45%]">
             <h1
               className="  font_2  text-[50px] md:text-[60px] lg:text-[80px]">
                 Signature <br /> Menu
@@ -22,10 +23,10 @@ function HeroMenu() {
               Order 
           </Link>
         </div>
-        <div  className=" hero-img-rigth  ">
-            <img src={require(`../IMg/small_left.png`)} alt="" />
-        </div>
 
+        <div  className=" hero-img-rigth w-[48%]  element-center ">
+            <img src={require(`../IMg/small_left.png`)} alt="img" />
+        </div>
       </div>
   
 

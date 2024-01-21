@@ -9,7 +9,7 @@ function Header() {
     <header className="header  container">
       <Logo/>
       <Nav/>
-      <div className=' nav-right flex items-center  gap-x-[20px]'>
+      <div className=' nav-right flex items-center gap-x-[5px]  '>
         <Link 
             className='mainbtn  bg-transparent  w-[40px] h-[40px] text-[15px]  duration-[0.3s]  
             transition     font-normal'

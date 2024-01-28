@@ -33,7 +33,7 @@ function Nav() {
         <Link  to={'/menu'}>Coffe</Link>
       </li>
       <li>
-        <Link  to="/appetizers">appetizers</Link>
+        <Link  to="/dessert">Dessert</Link>
       </li>
     </ul>
   </> },

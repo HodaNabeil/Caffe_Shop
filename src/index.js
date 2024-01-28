@@ -16,6 +16,7 @@ import { store } from './Store/store';
 import HeroMenu from './Components/HeroMenu';
 import Order from './Page/Order';
 import Cantact from './Page/Cantact';
+import DessertPage from './Page/DessertPage';
 
 
 
@@ -83,14 +84,13 @@ const router = createBrowserRouter([
         
   }
   ,{
-    path:'/appetizers',
+    path:'/dessert',
     element:  <div className=' overflow-hidden'>
-        <div className='home_page ' style={{overflow:'visible'}}>
+            {/* <div className='home_page  '  style={{overflow:'visible'}}>
             <Header/>
-      </div>
-    
+            </div> */}
+          <DessertPage/>
     </div> 
-        
   }
   ,{
     path:'/heart',

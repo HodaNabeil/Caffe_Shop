@@ -4,7 +4,7 @@ export const fetchCoffeMenu=createAsyncThunk(
   'menuCoffeSlice/fetchCoffeMenu', async() => {
 
     try {
-      const res = await fetch('/menuCoffe.json');
+      const res = await fetch('/coffemenu.json');
       if (!res.ok) {
         throw new Error("Failed to fetch products");
       }

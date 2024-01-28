@@ -8,7 +8,7 @@ function RightOrder() {
   
         <div className="  p-[10px]  bg-[#b3895f] ">
           <h3 
-            className=" font_3  bg-[#c7996a]  rounded-[50px] mainColor  text-[25px]   text-center font-bold  " 
+            className=" font_3  bg-[#220100]  rounded-[50px] text-[#ffddbb]  text-[25px]   text-center font-bold  " 
           >
             Order details
           </h3>
@@ -35,9 +35,8 @@ function RightOrder() {
             <span>326$</span>
           </li>
         </ul>
-        <div className=" check bg-[#220100] text-[#a4997d] text-center">
-        <a href='/' className="">Check</a>
-
+        <div className=" check  bg-[#220100] text-[#fedcba] text-center">
+        <a href='/' className="  font_2 tracking-[2px]">Check</a>
         </div>
       </div>
   

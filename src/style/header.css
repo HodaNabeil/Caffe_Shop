@@ -6,7 +6,7 @@
 .header {
   max-width: 1640px;
   margin: auto;
-  padding: 20px 30px;
+  padding: 10px 20px;
   background: transparent;
   display: flex;
   justify-content: space-between;
@@ -64,19 +64,23 @@
   
 }
 
+/* .main-menu:hover .menu-container    {
+  display: block;
+} */
+
 .menu-container  {
   background-color: #fff;
   border-radius: 8px;
-
   position: absolute;
   left: 0;
   top: 33px;
-
   /* display: none; */
+
 }
 .menu-container a {
   margin: 8px 15px;
   display: block;
+
 }
 .main-menu:hover > .menu-container a  {
   /* display: block !important; */
@@ -96,7 +100,7 @@ cursor: pointer;
 /* Custom Mobeil media */
 @media (max-width:768px) {
   .header {
-    padding: 20px 60px 20px 20px;
+    padding: 10px 60px 10px 10px;
   }
   .header .nav-links {
     display: none;

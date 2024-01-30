@@ -1,0 +1,20 @@
+
+
+.box-dessert .image::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  background-color: #22010052;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+  border-radius: 6px;
+}
+.box-dessert .image:hover::after  {
+  width: 90%;
+  height: 250px;
+}
+
+

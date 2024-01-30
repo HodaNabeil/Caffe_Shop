@@ -1,93 +1,75 @@
+[
+  {
+    "id": 1,
+    "name": "cheese cake",
+    "sizes": [
+      { "id": "small", "price": 10.99 },
+      { "id": "medium", "price": 15.99 },
+      { "id": "large", "price": 20.99 }
+    ],
+    "category": "cheese cake",
+    "imgae": "/IMgdessert/cake_1.jpeg",
+    "des":" Lorem dolor sit amet consectetur ."
+  },
+  {
+    "id": 2,
+    "name": "cheese cake",
+    "sizes": [
+      { "id": "small", "price": 12.99 },
+      { "id": "medium", "price": 17.99 },
+      { "id": "large", "price": 22.99 }
+    ],
+    "category": "cheese cake",
+    "imgae": "/IMgdessert/cake_6.jpg",
+    "des":" Lorem dolor sit amet consectetur."
+  },
 
-
-
-{
-  "products": [
-    {
-      "id": 1,
-      "name": "cheese cake",
-      "sizes": [
-        {"id": "small", "price": 10.99},
-        {"id": "medium", "price": 15.99},
-        {"id": "large", "price": 20.99}
-      ]
-      ,
-      "category":"cheese cake",
-      "imgae" :"/IMgdessert/cheesecake-1.jpg"
-    },
-    {
-      "id": 2,
-      "name": "cheese cake",
-      "sizes": [
-        {"id": "small", "price": 12.99},
-        {"id": "medium", "price": 17.99},
-        {"id": "large", "price": 22.99}
-      ]
-      ,
-      "category":"cheese cake",
-      "imgae" :"/IMgdessert/cheesecake-2.jpg"
-    },
-    {
-      "id": 2,
-      "name": "cheese cake",
-      "sizes": [
-        {"id": "small", "price": 12.99},
-        {"id": "medium", "price": 17.99},
-        {"id": "large", "price": 22.99}
-      ]
-      ,
-      "category":"cheese cake",
-      "imgae" :"/IMgdessert/cheesecake-3.jpg"
-    },
-
-    {
-      "id": 4,
-      "name": "Brownies",
-      "sizes": [
-        {"id": "small", "price": 10.99},
-        {"id": "medium", "price": 15.99},
-        {"id": "large", "price": 20.99}
-      ]
-      ,
-      "category":"Brownies",
-      "imgae" :"/IMgdessert/Brownies-1.jpg"
-    },
-    {
-      "id": 5,
-      "name": "Brownies",
-      "sizes": [
-        {"id": "small", "price": 12.99},
-        {"id": "medium", "price": 17.99},
-        {"id": "large", "price": 22.99}
-      ]
-      ,
-      "category":"Brownies",
-      "imgae" :"/IMgdessert/Brownies-2.jpg"
-    },
-    {
-      "id": 6,
-      "name": "Ice Cream",
-      "sizes": [
-        {"id": "small", "price": 12.99},
-        {"id": "medium", "price": 17.99},
-        {"id": "large", "price": 22.99}
-      ]
-      ,
-      "category":"Ice Cream",
-      "imgae" :"/IMgdessert/ice_1.jpg"
-    }
-    ,
-    {
-      "id": 7,
-      "name": "Ice Cream",
-      "sizes": [
-        {"id": "small", "price": 12.99},
-        {"id": "medium", "price": 17.99},
-        {"id": "large", "price": 22.99}
-      ]
-      ,
-      "category":"Ice Cream",
-      "imgae" :"/IMgdessert/ice_2.jpg"
-    }
-  ]
-}
+  {
+    "id": 4,
+    "name": "Brownies",
+    "sizes": [
+      { "id": "small", "price": 10.99 },
+      { "id": "medium", "price": 15.99 },
+      { "id": "large", "price": 20.99 }
+    ],
+    "category": "Brownies",
+    "imgae": "/IMgdessert/Brownies-1.jpg",
+    "des":" Lorem dolor sit amet consectetur."
+  },
+  {
+    "id": 5,
+    "name": "Brownies",
+    "sizes": [
+      { "id": "small", "price": 12.99 },
+      { "id": "medium", "price": 17.99 },
+      { "id": "large", "price": 22.99 }
+    ],
+    "category": "Brownies",
+    "imgae": "/IMgdessert/Brownies-2.jpg",
+    "des":" Lorem dolor sit amet consectetur."
+  },
+  {
+    "id": 6,
+    "name": "Ice Cream",
+    "sizes": [
+      { "id": "small", "price": 12.99 },
+      { "id": "medium", "price": 17.99 },
+      { "id": "large", "price": 22.99 }
+    ],
+    "category": "Ice Cream",
+    "imgae": "/IMgdessert/ice_1.jpg",
+    "des":" Lorem dolor sit amet consectetur."
+  },
+  {
+    "id": 7,
+    "name": "Ice Cream",
+    "sizes": [
+      { "id": "small", "price": 12.99 },
+      { "id": "medium", "price": 17.99 },
+      { "id": "large", "price": 22.99 }
+    ],
+    "category": "Ice Cream",
+    "imgae": "/IMgdessert/ice_2.jpg",
+    "des":" Lorem dolor sit amet consectetur."
+  }
+]

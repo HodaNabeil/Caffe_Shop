@@ -23,6 +23,7 @@
   margin: 20px 0;
   max-width: 100%;
   height: auto;
+  
 }
 
 @media (max-width:767px)  {
@@ -42,28 +43,7 @@
 
 /* Icon */
 
-.add-card {
-  position: relative;
-}
-.add-card::after {
-  content: 'Add to Coffe';
-  color: #fff;
-  font-size: 10px;
-  position: absolute;
-  background-color:var(--mainColor) ;
-  padding: 6px 8px;
-  width: 50px;
-  height: 30px;
-  left: 0;
-  top: -40px;
-  border-radius: 3px;
-  font-family: 'Roboto';
-  display: none;
-  font-weight: normal;
-}
-.add-card:hover::after {
-  display: block;
-}
+
 @media (min-width:767px) and (max-width:795px) {
   .card-cofe .price-btn {
     bottom: -80px !important;

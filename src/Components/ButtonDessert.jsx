@@ -9,8 +9,8 @@ function ButtonDessert({filterDessertsByCategory}) {
   const btns = [
     "All",
     "cheese cake",
-    "Brownies",
-    "Ice Cream"
+    "brownies",
+    "ice cream"
   ]
   const handleButtonClick = (category) => {
     setActiveButton(category)

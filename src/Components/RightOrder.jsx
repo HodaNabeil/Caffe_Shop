@@ -1,10 +1,21 @@
 
 
-import '../style/right-order.css'
+import { useSelector } from 'react-redux';
+import '../style/order.css'
 
-function RightOrder() {
+function RightOrder() {  
+  const order =useSelector((state)=> state.order);
+  const addedTax = 10;
+
+  const totalPrice = order.reduce((acc,product) => {
+    acc += product.price * product.quantity + addedTax
+    return acc;
+  }
+  ,0)
+
+
   return (
-    <div className=' right-order  max-w-full  w-[240px] h-[325px]  my-[40px] bg-[#b3895f] '>
+    <div className=' right-order  max-w-full  md:w-[200px] lg:w-[240px] h-[325px]  my-[40px] bg-[#b3895f] '>
   
         <div className="  p-[10px]  bg-[#b3895f] ">
           <h3 
@@ -24,15 +35,15 @@ function RightOrder() {
           </li>
           <li >
             <p>Added Tax</p>
-            <span >3$</span>
+            <span >{addedTax} $</span>
           </li>
           <li>
             <p>Price</p>
             <span>326$</span>
           </li>
           <li  >
-            <p>total</p>
-            <span>326$</span>
+            <p>TotalPrice</p>
+            <span>{totalPrice.toFixed(2)}$</span>
           </li>
         </ul>
         <div className=" check  bg-[#220100] text-[#fedcba] text-center">

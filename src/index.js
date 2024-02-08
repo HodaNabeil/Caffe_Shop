@@ -55,12 +55,12 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: 
-        <>
-        <div className='home_page'>
+        <div className=' overflow-hidden'>
+          <div className='home_page' style={{overflow:'visible'}}>
           <Header/>
           </div>
         <Cantact/>
-        </>
+        </div>
   ,
   }
   ,{

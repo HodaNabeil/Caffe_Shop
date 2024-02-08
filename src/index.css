@@ -50,6 +50,34 @@
 .min-color {
   color: var(--mainColor);
 }
+.icon-favorite::after  ,.add-card::after {
+  padding: 4px;
+  position: absolute;
+  background-color: #de9f65;
+  width: 40px;
+  height: 25px;
+  content: "Add to Wishlist";
+  font-size: 11px;
+  width: 90px;
+  color: #220100;
+  font-weight: bold;
+  border-radius: 6px;
+  top: -30px;
+  display: none;
+}
+.icon-favorite:hover::after {
+  display: block;
+}
+.add-card {
+  position: relative;
+}
+.add-card::after {
+  content: 'Add to Cart';
+}
+.add-card:hover::after {
+  display: block;
+}
+
 
 @layer base {
   .mainbtn {
@@ -58,6 +86,7 @@
     padding: 8px 10px;
     border-radius: 50px;
     border: 2px solid transparent;
+    position: relative;
   }
   .secondbtn {
     background: #220100;

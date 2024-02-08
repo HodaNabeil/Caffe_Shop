@@ -23,15 +23,14 @@ function CardTypeCofe({name,des,price,imge }) {
       <div 
         className= ' mainColor flex  items-center justify-center  gap-[20px] my-[20px] '>
         <button  >
-        <i 
-          style={{cursor:"default"}} 
-          className=" icontype    fa-solid fa-mug-hot"></i>
-        </button>
-        <button>
           <i 
-          onClick={()=>setActiveColor(!activeColor)}
-          
-            className={`  icontype fa-regular fa-heart ${activeColor && 'fa-solid'}`}></i>
+            style={{cursor:"default"}} 
+            className=" icontype    fa-solid fa-mug-hot"></i>
+          </button>
+        <button className=' relative  icon-favorite '>
+          <i 
+            onClick={()=>setActiveColor(!activeColor)}
+            className={`  icontype  relative fa-regular fa-heart ${activeColor && 'fa-solid'}`}></i>
         </button>
       </div>
       <Link to={'/menu'} 

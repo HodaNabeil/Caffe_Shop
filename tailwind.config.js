@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow:{
+        "3xl":"0px 0px 3px 2px #c5b6b6",
+        "2xl":" 0px 0px 8px 2px #ffe3e2"
+      },
 
       screens:{
         sm:'576px',

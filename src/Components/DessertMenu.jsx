@@ -21,21 +21,22 @@ function DessertMenu() {
 
 
   const filterDessertsByCategory = (category) =>  {
-    const filterProduct =  category === "All" ? dessert : filteredDesserts.filter((product)=> product.category === category)
+    const filterProduct =  category === "All" ? dessert : dessert.filter((product)=> product.category === category)
     setFilteredDesserts(filterProduct)
   
   }
 
-  console.log(filteredDesserts)
-
 
   return (
     <div className=" bg-[#220100] container ">
-      <div  className="pt-[80px] pb-[40px] m-auto">
+      <div  className="pt-[20px] pb-[40px] m-auto">
             <h2 
-            className=" font_3  m-[40px] element-center  tracking-[1px]  md:tracking-[2px] text-[22px]  sm:text-[30px]  md:text-[35px] lg:text-[45px] text-[#fff]">
-          Enjoy delicious desserts</h2>
-        <ButtonDessert filterDessertsByCategory ={filterDessertsByCategory} setFilteredDesserts={setFilteredDesserts}  />
+              className=" font_3  m-[40px] element-center 
+                tracking-[1px]  md:tracking-[2px] text-[22px]  
+                sm:text-[30px]  md:text-[35px] lg:text-[45px] text-[#fff]">
+              Enjoy delicious desserts
+            </h2>
+        <ButtonDessert filterDessertsByCategory ={filterDessertsByCategory}    setFilteredDesserts={setFilteredDesserts}   />
         <div className=" mt-[70px]   grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-5 ">
           {
             filteredDesserts.map((product ,index)=> {

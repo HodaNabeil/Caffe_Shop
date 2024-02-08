@@ -18,8 +18,8 @@ function HeroMenu() {
               dolorem aperiam perferendis?
             </p>
             <Link 
-              className="mainbtn mt-[20px]   md:mt-[30px]  tracking-[1.6px] inline-block  text-center w-[100px]"
-              to='/'> 
+              className="mainbtn mt-[20px]  font_3 font-bold    md:mt-[30px]  tracking-[2px] inline-block  text-center w-[100px]"
+              to='/card'> 
               Order 
           </Link>
         </div>

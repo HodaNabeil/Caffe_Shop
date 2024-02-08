@@ -63,27 +63,17 @@
   color: #220100;
   
 }
-
-/* .main-menu:hover .menu-container    {
-  display: block;
-} */
-
 .menu-container  {
   background-color: #fff;
   border-radius: 8px;
   position: absolute;
   left: 0;
   top: 33px;
-  /* display: none; */
-
 }
 .menu-container a {
   margin: 8px 15px;
   display: block;
 
-}
-.main-menu:hover > .menu-container a  {
-  /* display: block !important; */
 }
 
 .mobile-icon-nav {
@@ -139,5 +129,28 @@ cursor: pointer;
   }
   .header .nav-link:hover::before {
     background-color: #fff;
+  }
+}
+
+.namber-card::after{
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #220100;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  right: 6px;
+  animation-name:  up-and-down ;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes up-and-down {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }

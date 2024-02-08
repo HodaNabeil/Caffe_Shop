@@ -1,5 +1,8 @@
 
-
+.box-dessert .image img {
+  box-shadow: inset 0px 0px 10px 20px #fedcba9c;
+  filter: drop-shadow(11px 1px 2px rgb(0, 0, 0 ,0.3));
+}
 .box-dessert .image::after {
   position: absolute;
   content: "";
@@ -11,10 +14,23 @@
   transform: translate(-50%, -50%);
   transition: all 0.3s;
   border-radius: 6px;
+  cursor: pointer;
 }
 .box-dessert .image:hover::after  {
-  width: 90%;
-  height: 250px;
+  width: 100%;
+  height: 220px;
 }
-
+.box-dessert .icon-favorite  {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  transform: translate(-50%,-50%);
+  z-index: 5;
+}
+.box-dessert .icon-favorite::after {
+  left: -50px !important;
+}
+.box-dessert .add-card::after {
+  left: -60px;
+}
 

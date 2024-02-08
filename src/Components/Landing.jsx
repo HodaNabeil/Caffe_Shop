@@ -20,9 +20,9 @@ function Landing() {
         </h1>
         <button 
           className="mainbtn my-[30px] text-[14px]   md:text-[18px] w-[160px] 
-            hover:bg-transparent transition duration-300  
+           transition duration-300  
             border-[2px] border-solid border-transparent
-            hover:border-[2px]  hover:border-solid   hover:border-[#220100] ">
+ ">
               View Menu
         </button>
         <div  className=' flex  gap-x-[20px] md:gap-x-[30px]'>

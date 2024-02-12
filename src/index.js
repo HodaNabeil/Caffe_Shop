@@ -37,10 +37,13 @@ const router = createBrowserRouter([
   },
   {
     path: "/about",
-    element: <div>
-      <Header/>
+    element: 
+    <div className=' overflow-hidden'>
+    <div className='home_page' style={{overflow:'visible'}}>
+    <Header/>
+    </div>
       <About/>
-      </div>,
+    </div>,
   },
   {
     path: "/menu",
@@ -79,16 +82,12 @@ const router = createBrowserRouter([
         <div className='home_page ' style={{overflow:'visible'}}>
             <Header/>
       </div>
-    
     </div> 
         
   }
   ,{
     path:'/dessert',
     element:  <div className=' overflow-hidden'>
-            {/* <div className='home_page  '  style={{overflow:'visible'}}>
-            <Header/>
-            </div> */}
           <DessertPage/>
     </div> 
   }

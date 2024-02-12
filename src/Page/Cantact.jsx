@@ -7,7 +7,7 @@ function Cantact() {
     <i className="fa-solid fa-phone-volume  text-[20px] sm:text-[35px] md:text-[50px]  text-[#fefae0] " ></i>,
     <i className="fa-solid fa-envelope           text-[20px] sm:text-[35px] md:text-[50px]  text-[#fefae0] "></i>,
     <i className="fa-brands fa-square-facebook   text-[20px] sm:text-[35px] md:text-[50px]  text-[#fefae0] "></i>,
-    <i className="fa-brands fa-instagram         text-[20px] sm:text-[35px] md:text-[50px]  text-[#fefae0]  "></i>
+    <i className="fa-solid fa-location-dot      text-[20px] sm:text-[35px] md:text-[50px]  text-[#fefae0]  "></i>
   ]
 
 
@@ -17,7 +17,7 @@ function Cantact() {
           <div className=" overly   relative">
             <img 
               className="image-hero"
-              src={require(`../IMg/contact_landin.jpeg`)} alt="" />
+              src={require(`../IMg/contact_landin.jpeg`)} alt="img" />
           </div>
 
           <div className="  absolute  top-[50%]  left-[50%] translate-x-[-50%]  translate-y-[-50%]">
@@ -47,11 +47,13 @@ function Cantact() {
 
         <div 
           style={{padding:"20px "} }
-          className=" container  flex  flex-col sm:flex-row gap-x-[10px] md:gap-x-[50px] w-[80%] rounded-[8px] bg-[#220100]">
+          className=" container  flex  flex-col 
+            sm:flex-row gap-x-[10px] md:gap-x-[50px]
+              w-[80%] rounded-[8px] bg-[#220100]">
             <div >
               <img 
                 className="  w-full sm:w-[250px] md:w-[300px]  rounded-[10px]"
-                src={require(`../IMg/cofe-contact.jpg`)} alt="img" />
+                src={require(`../IMg/cofe-contact.jpg`)} alt="img-contact" />
             </div >
               <form 
                 action="/" className=" w-full sm:w-[45%] py-[50px] ">
@@ -60,16 +62,33 @@ function Cantact() {
                     className="text-[#fefae0]  font_2 md:text-[18px] mb-[5px] md:mb-[8px]"
                     htmlFor="name">Name </label>
                   <input 
-                    className=" block p-[5px] text-[14px] md:text-[16px] md:px-[15px] md:py-[8px]  min-color rounded-[50px]  w-full  outline-none"
+                    className=" block p-[5px] text-[14px] 
+                    md:text-[16px] md:px-[15px] md:py-[8px]  min-color 
+                    rounded-[50px]  w-full  outline-none"
                     type="text" placeholder=" Name Full.." />
                 </div>
 
+                
+
+
+                <div className=" flex flex-col  mb-[10px]">
+                  <label
+                    className="text-[#fefae0]  font_2 md:text-[18px] mb-[5px] md:mb-[8px]"
+                    htmlFor="phone">Phone</label>
+                  <input 
+                    className=" block p-[5px] text-[14px] 
+                    md:text-[16px] md:px-[15px] md:py-[8px]  min-color 
+                    rounded-[50px]  w-full  outline-none"
+                    type="number" placeholder=" Number" />
+                </div>
                 <div lassName=" flex flex-col  mb-[10px]">
                   <label 
                     className="text-[#fefae0]  font_2 md:text-[18px] mb-[5px] md:mb-[8px] "
                     htmlFor="email">Email</label>
                   <input 
-                      className=" block p-[5px] mt-[2px] text-[14px] md:text-[16px] md:px-[15px] md:py-[8px]  min-color rounded-[50px]  w-full  outline-none"
+                      className=" block p-[5px] mt-[2px] 
+                      text-[14px] md:text-[16px] md:px-[15px] md:py-[8px]  
+                      min-color rounded-[50px]  w-full  outline-none"
                     type="email" id="email" required  placeholder="Email"/>
                 </div>
                 <div className=" my-[20px] px-[10px]">
@@ -80,12 +99,13 @@ function Cantact() {
                 </div>
 
                 <div 
-                  className=" element-center bg-[#fefae0]
+                  className=" element-center  cursor-pointer bg-[#fefae0]
                     p-[7px]
                     md:py-[10px] md:px-[12px] rounded-[50px] min-w-fit">
                   <input
                     type="submit" value={'Send'} 
-                    className=" cursor-pointer font_2  md:text-[18px]  block  tracking-[2px] font-bold" />
+                    className=" cursor-pointer font_2 
+                     md:text-[18px]  block  tracking-[2px] font-bold" />
                   <i className="fa-solid fa-paper-plane ml-[10px] "></i>
                 </div>
               </form>

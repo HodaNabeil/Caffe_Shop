@@ -1,0 +1,70 @@
+.container-counter {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .container-counter {
+    padding-top: 50px;
+  }
+}
+.about .overly::after {
+  content: "";
+  width: 100%;
+  height: 200px;
+  background-color: #100908ab;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.container-video.overly::after {
+  height: 100% !important;
+}
+.about .icon-team i {
+  background-color: #c9975e;
+  width: 30px;
+  height: 30px;
+  color: #fefae0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+.about .icon-team i:hover {
+  color: #c9975e;
+  transition: 0.3s all linear;
+  background-color: #fefae0;
+}
+.about .information-chef h4,
+.information-chef i {
+  z-index: 999;
+}
+.information-chef::after {
+  content: "";
+  position: absolute;
+  top: -90%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0000008f;
+  width: 180px;
+  height: 170px;
+  border-radius: 8px;
+}
+
+.about .slider {
+  background-image: url("../IMg/bg-sweets.jpg");
+  background-position: center;
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+.about .slider.overly::after {
+  width: 100%;
+  height: 500px;
+}
+.about .slider .btnpre {
+  border-radius: 2px 87px 59px 54px;
+}
+.about .slider .btnnext {
+  border-radius: 59px 2px 54px 87px;
+}

@@ -1,5 +1,5 @@
 
-import '../style/typecofe.css'
+import "../style/typecofe.css"
 
 import   {Link}from 'react-router-dom';
 import CardTypeCofe from './CardTypeCofe';

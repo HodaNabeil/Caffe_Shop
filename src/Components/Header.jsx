@@ -14,7 +14,7 @@ function Header() {
       <Logo/>
       <Nav/>
       <div className=' nav-right flex items-center gap-x-[5px]  '>
-        <Link 
+        {/* <Link 
             className='mainbtn  bg-transparent  w-[40px] h-[40px] text-[15px]  duration-[0.3s]  
             transition     font-normal'
           to={'/heart'}
@@ -26,7 +26,7 @@ function Header() {
           className='mainbtn  bg-transparent  w-[40px] h-[40px] text-[15px]  duration-[0.3s]  
             transition      font-normal'>
           <i className="fa-solid fa-user  element-center"></i>
-        </Link>
+        </Link> */}
         <Link 
           to={'/card'} 
           className={`mainbtn  bg-transparent  w-[40px] h-[40px] text-[15px]  duration-[0.3s]  

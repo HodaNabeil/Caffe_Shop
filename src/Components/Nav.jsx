@@ -1,67 +1,126 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
-import { useState } from 'react'
-import { Link } from 'react-router-dom';
-
-
-
-import '../style/header.css'
+import "../style/header.css";
 function Nav() {
+  const [isVisible, setIsVisible] = useState(false);
 
-  
-  const [mobile ,setMobile] = useState(false);
-  const [navOpen , setNavOpen] =useState(false);
-  const [activeLinkes , setActiveLinks] = useState("Home");
+  const handleMouseEnter = () => {
+    setIsVisible(true);
+  };
 
-  function hundleActiveLiks (link) {
+  const handleMouseLeave = () => {
+    setIsVisible(false);
+  };
+
+  const [mobile, setMobile] = useState(false);
+  const [navOpen, setNavOpen] = useState(false);
+  const [activeLinkes, setActiveLinks] = useState("Home");
+
+  function hundleActiveLiks(link) {
     setActiveLinks(link);
-  
   }
 
   function Toggle() {
-    setMobile((isopen)=> !isopen);
-    setNavOpen((navOpen) => !navOpen)
+    setMobile((isopen) => !isopen);
+    setNavOpen((navOpen) => !navOpen);
   }
-  const links =[
-  {name:'Home' ,to:'/' ,icon:  <i className="fa-solid fa-house"></i>},
-  {name:<>
-    <div className='main-menu'>
-      <span>Menu</span>
-      <i className="  ml-[2px]  inline-block text-[13px]  fa-solid fa-chevron-down"></i>
-    </div>
-    <ul className='menu-container '>
-      <li>
-        <Link  to={'/menu'}>Coffe</Link>
-      </li>
-      <li>
-        <Link  to="/dessert">Dessert</Link>
-      </li>
-    </ul>
-  </> },
-  {name:'Contact us ' , to: '/contact',icon:<i className="fa-regular fa-user"></i>},
-  {name:'About Us ' , to: '/about',icon:<i className="fa-regular fa-user"></i>},
-  ]
+console.log(isVisible)
   return (
-    <nav className=' flex   items-center  '>
-      <ul className={`nav-links ${navOpen ===true ? 'nav-links ' :' nav-links show '}`}>
-          {
-            links.map((link ,index) => {
-            return(
-            <li key={index} onClick={ ()=> hundleActiveLiks(link.name)}   >
-              <Link to={link.to} 
-                className= {` nav-link ${activeLinkes === link.name ? 'active' : ' '}`}>
-                <span className='mobile-icon-nav'>{link.icon}</span>
-                {link.name} 
-              </Link>
-            </li>
-            ) 
-            })
-          }
+    <nav className=" flex  items-center  ">
+      <ul
+        className={`nav-links ${
+          navOpen === true ? "nav-links " : " nav-links show "
+        }`}
+      >
+
+        <li
+          onClick={() => {
+            hundleActiveLiks("Home");
+          }}
+        >
+          <Link
+            className={` nav-link ${activeLinkes === "Home" ? "active" : " "}`}
+            to={"/home"}
+          >
+            Home
+          </Link>
+        </li>
+        <li
+              onMouseEnter={handleMouseEnter }
+              onMouseLeave={handleMouseLeave }
+    
+        >
+          <Link 
+            className={` nav-link ${activeLinkes === "Coffe" || activeLinkes === "Dessert" ? "active" : " "}`}
+          to={"/menu"}>Menu</Link>
+        </li>
+        <ul 
+      
+        className={` z-[50] menu-container  ${isVisible && "block" }`}
+        
+        >
+          <li
+            onClick={() => {
+              hundleActiveLiks("Coffe");
+            }}
+          >
+            <Link
+              className={` nav-link ${
+                activeLinkes === "Coffe" ? "active" : " "
+              }`}
+              to={"/menu"}
+            >
+              Coffe
+            </Link>
+          </li>
+          <li
+            onClick={() => {
+              hundleActiveLiks("Dessert");
+            }}
+            className={` nav-link ${
+              activeLinkes === "Dessert" ? "active" : " "
+            }`}
+          >
+            <Link to="/dessert">Dessert</Link>
+          </li>
+        </ul>
+        <li
+          onClick={() => {
+            hundleActiveLiks("Contact");
+          }}
+        >
+          <Link
+            className={` nav-link ${
+              activeLinkes === "Contact" ? "active" : " "
+            }`}
+            to={"/contact"}
+          >
+            Cotact
+          </Link>
+        </li>
+        <li
+          onClick={() => {
+            hundleActiveLiks("About");
+          }}
+        >
+          <Link
+            className={` nav-link ${activeLinkes === "About" ? "active" : " "}`}
+            to={"/about"}
+          >
+            About
+          </Link>
+        </li>
       </ul>
-      <div   onClick={Toggle}>
-        <i className={`mobile-icon fa-solid ${mobile ?  '  fa-bars':' fa-xmark' }`}></i>
+      <div onClick={Toggle}>
+        <i
+          className={`mobile-icon fa-solid ${
+            mobile ? "  fa-bars" : " fa-xmark"
+          }`}
+        ></i>
       </div>
-  </nav>
-  )
+    </nav>
+  );
 }
 
-export default Nav
+export default Nav;

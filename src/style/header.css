@@ -69,7 +69,7 @@
   position: absolute;
   left: 0;
   top: 33px;
-  display: nones;
+  display: none;
 }
 .menu-container a {
   margin: 8px 15px;

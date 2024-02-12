@@ -33,7 +33,6 @@ function Header() {
           transition     font-normal
           ${order.length >0 ? "namber-card" : " "}
           
-          
           `}>
           <i className="fa-solid fa-bag-shopping text-[18px] element-center  relative text-[#ffffff] "></i>
         </Link>

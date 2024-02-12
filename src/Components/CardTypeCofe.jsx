@@ -1,7 +1,6 @@
 
 
 import { Link } from 'react-router-dom'
-import "../style/typecofe.css"
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 

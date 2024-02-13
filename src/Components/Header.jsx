@@ -17,7 +17,7 @@ function Header() {
         <Link 
             className='mainbtn  bg-transparent  w-[40px] h-[40px] text-[15px]  duration-[0.3s]  
             transition     font-normal'
-          to={'/heart'}
+          to={'/favorites'}
           >
         <i className="fa-regular fa-heart"></i>
         </Link>

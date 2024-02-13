@@ -7,35 +7,41 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from './Page/Home';
-import About from './Page/About';
-import CoffeMenu from './Page/CoffeMenu';
-import Header from './Components/Header';
+
+
 import { Provider } from 'react-redux'
 import { store } from './Store/store';
 
-import Order from './Page/Order';
-import Cantact from './Page/Cantact';
-import DessertPage from './Page/DessertPage';
-import Account from './Page/Account';
-import Login from './Components/Login';
-import FavoritesPage from './Page/FavoritesPage';
 
 
-
+const HomeLazyLoding =React.lazy(()=>import("./Page/Home"));
+const AboutLazyLoding =React.lazy(()=>import("./Page/About"));
+const ContactLazyLoding =React.lazy(()=>import("./Page/Cantact"));
+const  AccountLazyLoding =React.lazy(()=>import("./Page/Account"));
+const HeaderLazyLoading=React.lazy(()=>import("./Components/Header"));
+const CoffeMenuLazyLoading =React.lazy(()=>import("./Page/CoffeMenu"));
+const CardPageLazyLoading=React.lazy(()=>import("./Page/Order")); 
+const FavoritesPageLazyLoading=React.lazy(()=>import("./Page/FavoritesPage")); 
+const  LoginLazyLoding =React.lazy(()=>import("./Components/Login"));
+const  DessertPageLazyLoding =React.lazy(()=>import("./Page/DessertPage"));
 const router = createBrowserRouter([
   {
     path: "/",
     element: 
       <>
-      <Home/>
+      <React.Suspense fallback="Loading Home Page">
+          <HomeLazyLoding/>
+      </React.Suspense>
+
       </>
   },
   {
     path: "/home",
     element: 
       <>
-      <Home/>
+        <React.Suspense fallback="Loading Home Page">
+          <HomeLazyLoding/>
+      </React.Suspense>
       </>
   },
   {
@@ -43,29 +49,41 @@ const router = createBrowserRouter([
     element: 
     <div className=' overflow-hidden'>
     <div className='home_page' style={{overflow:'visible'}}>
-    <Header/>
+      <React.Suspense fallback="Loading...">
+        <HeaderLazyLoading/>
+      </React.Suspense>
+  
     </div>
-      <About/>
+     <React.Suspense fallback="Loading about Page">
+      <AboutLazyLoding/>
+     </React.Suspense>
+    
     </div>,
   },
   {
     path: "/menu",
     element: 
-    < >
+
         <div >
-            <CoffeMenu/>
+          <React.Suspense fallback="Loading Menu">
+            <CoffeMenuLazyLoading/>
+          </React.Suspense>
         </div>
-    
-    </>,
+
   },
   {
     path: "/contact",
     element: 
         <div className=' overflow-hidden'>
           <div className='home_page' style={{overflow:'visible'}}>
-          <Header/>
+          <React.Suspense fallback="Loading...">
+          <HeaderLazyLoading/>
+      </React.Suspense>
           </div>
-        <Cantact/>
+          <React.Suspense fallback="Loading Contact Page">
+            <ContactLazyLoding/>
+          </React.Suspense>
+  
         </div>
   ,
   }
@@ -73,9 +91,13 @@ const router = createBrowserRouter([
     path:'/card',
     element:  <div className=' overflow-hidden'>
         <div className='home_page ' style={{overflow:'visible'}}>
-            <Header/>
+        <React.Suspense fallback="Loading...">
+        <HeaderLazyLoading/>
+      </React.Suspense>
       </div>
-      <Order/>
+        <React.Suspense fallback="Loading Cart Page">
+          <CardPageLazyLoading/>
+        </React.Suspense>
     </div> 
         
   }
@@ -83,26 +105,39 @@ const router = createBrowserRouter([
     path:'/account',
     element:  <div className=' overflow-hidden'>
         <div className='home_page ' style={{overflow:'visible'}}>
-            <Header/>
+        <React.Suspense fallback="Loading...">
+        <HeaderLazyLoading/>
+      </React.Suspense>
       </div>
-      <Account/>
+      <React.Suspense fallback="Loading Account Page">
+        <AccountLazyLoding/>
+      </React.Suspense>
+    
     </div> 
         
   }
   ,{
     path:'/dessert',
     element:  <div className=' overflow-hidden'>
-          <DessertPage/>
+      <React.Suspense fallback="Loading Dessert Page">
+        <DessertPageLazyLoding/>
+      </React.Suspense>
+        
     </div> 
   }
   ,{
-    path:'/heart',
+    path:'/favorites',
     element:  <div className=' overflow-hidden'>
-        <div className='home_page ' style={{overflow:'visible'}}>
-            <Header/>
+        <div className='home_page ' style={{overflow:'visible'}} >
+        <React.Suspense fallback="Loading...">
+        <HeaderLazyLoading/>
+      </React.Suspense>
       </div>
-      <FavoritesPage/>
-    
+
+      <React.Suspense fallback="Loading Page">
+        <FavoritesPageLazyLoading/>
+      </React.Suspense>
+  
     </div> 
         
   }
@@ -110,9 +145,14 @@ const router = createBrowserRouter([
     path:'/login',
     element:  <div className=' overflow-hidden'>
         <div className='home_page ' style={{overflow:'visible'}}>
-            <Header/>
+        <React.Suspense fallback="Loading...">
+        <HeaderLazyLoading/>
+      </React.Suspense>
       </div>
-        <Login/>
+      <React.Suspense fallback="Loading Login Page">
+        <LoginLazyLoding/>
+      </React.Suspense>
+    
     </div> 
         
   }

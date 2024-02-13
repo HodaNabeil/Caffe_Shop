@@ -1,1 +1,6 @@
 
+.favorites-container {
+  background-color: #fefae0;
+  width: 100%;
+  min-height: calc(100% - 85px) ;
+}

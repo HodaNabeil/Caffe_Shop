@@ -78,6 +78,9 @@
   display: block;
 }
 
+.main-height-screen {
+  height: calc(100vh - 85px);
+}
 
 @layer base {
   .mainbtn {

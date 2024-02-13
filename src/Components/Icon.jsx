@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import {  coffeAddProduct} from "../Store/Slices/Card";
 
 import '../style/cardcoffe.css'
+import { addToFavorites } from "../Store/Slices/FavoritesSlice";
 
 function Icon({cofe}) {
   const [activeColor, setActiveColor] =useState(false);
@@ -15,13 +16,18 @@ function Icon({cofe}) {
     <button 
       className="add-card"
       onClick={()=> {
+
         dispatch(coffeAddProduct(cofe))
       }}
       >
       <i className=" icontype  fa-solid fa-mug-hot"></i>
     </button>
     <button className="  relative icon-favorite"
-      onClick={()=>setActiveColor(!activeColor)}
+      onClick={()=> {
+                dispatch(addToFavorites(cofe))
+        setActiveColor(!activeColor)
+      }
+}
       >
       <i className={`  icontype fa-regular fa-heart ${activeColor && 'fa-solid'}`}></i>
     </button>

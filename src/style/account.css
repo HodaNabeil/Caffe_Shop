@@ -1,0 +1,27 @@
+
+
+.account .container  {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+
+}
+.break::after {
+  position:absolute;
+  content: "";
+  left: 50px;
+  bottom: 12px;
+  background-color: #fefae07d;
+  height: 1px;
+  width: 75%;
+z-index: 1;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.login {
+  height: calc(100vh - 85px);
+}

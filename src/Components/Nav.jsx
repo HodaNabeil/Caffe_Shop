@@ -25,7 +25,6 @@ function Nav() {
     setMobile((isopen) => !isopen);
     setNavOpen((navOpen) => !navOpen);
   }
-console.log(isVisible)
   return (
     <nav className=" flex  items-center  ">
       <ul
@@ -33,7 +32,6 @@ console.log(isVisible)
           navOpen === true ? "nav-links " : " nav-links show "
         }`}
       >
-
         <li
           onClick={() => {
             hundleActiveLiks("Home");
@@ -46,19 +44,24 @@ console.log(isVisible)
             Home
           </Link>
         </li>
-        <li
-              onMouseEnter={handleMouseEnter }
-              onMouseLeave={handleMouseLeave }
-    
-        >
-          <Link 
-            className={` nav-link ${activeLinkes === "Coffe" || activeLinkes === "Dessert" ? "active" : " "}`}
-          to={"/menu"}>Menu</Link>
+        <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <Link
+            className={` nav-link ${
+              activeLinkes === "Coffe" || activeLinkes === "Dessert"
+                ? "active"
+                : " "
+            }`}
+            to={"/menu"}
+          >
+            Menu
+          </Link>
         </li>
-        <ul 
-      
-        className={` z-[50] menu-container  ${isVisible && "block" }`}
-        
+        <ul
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          className={` z-[50] menu-container    ${
+            isVisible ? " block " : " hidden"
+          }`}
         >
           <li
             onClick={() => {
@@ -66,7 +69,8 @@ console.log(isVisible)
             }}
           >
             <Link
-              className={` nav-link ${
+
+              className={` menu   nav-link ${
                 activeLinkes === "Coffe" ? "active" : " "
               }`}
               to={"/menu"}
@@ -78,11 +82,13 @@ console.log(isVisible)
             onClick={() => {
               hundleActiveLiks("Dessert");
             }}
-            className={` nav-link ${
-              activeLinkes === "Dessert" ? "active" : " "
-            }`}
+    
           >
-            <Link to="/dessert">Dessert</Link>
+            <Link 
+                    className={` menu nav-link ${
+                      activeLinkes === "Dessert" ? "active" : " "
+                    }`}
+            to="/dessert">Dessert</Link>
           </li>
         </ul>
         <li

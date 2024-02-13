@@ -21,7 +21,7 @@ function Order() {
   return order.length === 0 ? (
     <div className=' empty-card relative  bg-[#220100] element-center w-[100%]   '>
       <h2 
-        className=' text-[#f9d6b5] font_3 text-[50px] -tracking-tighter ' 
+        className=' text-[#f9d6b5] font_3 text-[25px]  sm:text-[35px]  md:text-[50px] -tracking-tighter ' 
         >
         Your shopping cart is empty
       </h2>

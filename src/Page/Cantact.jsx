@@ -17,7 +17,7 @@ function Cantact() {
           <div className=" overly   relative">
             <img 
               className="image-hero"
-              src={require(`../IMg/contact_landin.jpeg`)} alt="img" />
+              src={require(`../IMg/contact_landin.jpg`)} alt="img" />
           </div>
 
           <div className="  absolute  top-[50%]  left-[50%] translate-x-[-50%]  translate-y-[-50%]">

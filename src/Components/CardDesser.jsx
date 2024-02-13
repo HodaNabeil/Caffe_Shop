@@ -3,7 +3,8 @@ import { useState } from "react";
 
 import '../style/carddessert.css'
 import { useDispatch } from "react-redux";
-import {  dassertAddToCard } from "../Store/Slices/Card";
+import Card, {  dassertAddToCard } from "../Store/Slices/Card";
+import { addToFavorites } from "../Store/Slices/FavoritesSlice";
 
 
 
@@ -37,7 +38,13 @@ function CardDesser({product}) {
         className=" box-dessert  bg-[#fefae0] p-[10px] rounded-[6px]  relative ">
       <button className=" absolute icon-favorite">
         <i style={{display:"flex"}}
-          onClick={()=>setActiveColor(!activeColor)}
+          onClick={()=>{
+            setActiveColor(!activeColor);
+            dispatch(addToFavorites(product))
+          }
+            
+            
+            }
           className={`  bg-[#de9f65] text-[#220100]  
           cursor-pointer rounded-[50px] w-[40px] h-[40px] 
           element-center  text-center  fa-regular fa-heart 

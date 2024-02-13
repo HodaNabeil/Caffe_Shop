@@ -13,10 +13,13 @@ import CoffeMenu from './Page/CoffeMenu';
 import Header from './Components/Header';
 import { Provider } from 'react-redux'
 import { store } from './Store/store';
-import HeroMenu from './Components/HeroMenu';
+
 import Order from './Page/Order';
 import Cantact from './Page/Cantact';
 import DessertPage from './Page/DessertPage';
+import Account from './Page/Account';
+import Login from './Components/Login';
+import FavoritesPage from './Page/FavoritesPage';
 
 
 
@@ -82,6 +85,7 @@ const router = createBrowserRouter([
         <div className='home_page ' style={{overflow:'visible'}}>
             <Header/>
       </div>
+      <Account/>
     </div> 
         
   }
@@ -97,7 +101,18 @@ const router = createBrowserRouter([
         <div className='home_page ' style={{overflow:'visible'}}>
             <Header/>
       </div>
+      <FavoritesPage/>
     
+    </div> 
+        
+  }
+  ,{
+    path:'/login',
+    element:  <div className=' overflow-hidden'>
+        <div className='home_page ' style={{overflow:'visible'}}>
+            <Header/>
+      </div>
+        <Login/>
     </div> 
         
   }

@@ -7,7 +7,8 @@ function Footer() {
     <div className="background-blur">
       <div 
         style={{paddingTop:'20px '}}
-        className=" container footer   grid       grid-cols-2 md:grid-cols-4  w-full gap-x-7  ">
+        className=" container footer   grid  grid-cols-1 sm:grid-cols-2 
+             md:grid-cols-4  w-full sm:gap-x-5 md:gap-x-7  ">
         <div >
           <Logo/>
           <div className=" flex  justify-start gap-x-[10px] items-center  my-[40px]">

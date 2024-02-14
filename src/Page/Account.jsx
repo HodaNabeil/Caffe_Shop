@@ -44,7 +44,7 @@ function Account() {
       <div
       
        >
-        <div className=" flex   gap-x-[40px]  justify-between sm:flex-col md:flex-row ">
+        <div className=" flex   md:gap-x-[40px]  justify-between sm:flex-col md:flex-row ">
           <div className=" w-full md:w-[40%] ">
             <div className="  flex-col pt-[50px]">
               <h3 className="  text-[#fefae0]  px-[15px] tracking-[1px]  mb-[20px] 

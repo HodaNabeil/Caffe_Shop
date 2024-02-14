@@ -69,12 +69,12 @@ function About() {
           />
         </div>
 
-        <div className="w-[48%]">
+        <div className="w-full md:w-[48%]">
           <h2 className=" font_3 tracking-[1px] text-[30px] min-color  font-bold">
             New <span className=" font_3 text-[#8b5112]">coffee</span> founded
             for extraordinary
           </h2>
-          <p className=" text-[15px] text-[#382f2f]  mb-[15px]">
+          <p className=" w-[450px] md:w-full text-[15px] text-[#382f2f]  mb-[15px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, vero
             ipsum inventore quidem earum sint distinctio enim nemo facilis
             eligendi.
@@ -86,7 +86,7 @@ function About() {
             </h3>
             <div className="flex items-center">
               <i className="fa-solid fa-mug-hot text-[30px]  relative  text-[#c4975e]"></i>
-              <p className="ml-[5px] text-[#382f2f]">
+              <p className="  w-[450px] md:w-full ml-[5px] text-[#382f2f]">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Quaerat aliquam soluta ab inventore aperiam optio omnis error
                 explicabo itaque deleniti!
@@ -99,7 +99,7 @@ function About() {
             </h3>
             <div className="flex items-center">
               <i className="fa-solid fa-cookie text-[30px] relative  text-[#c4975e]"></i>
-              <p className="ml-[5px] text-[#382f2f]">
+              <p className=" w-[450px] md:w-full   ml-[5px] text-[#382f2f]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
                 dolorem accusamus cum quos est laudantium fuga. Laudantium
                 explicabo accusamus hic!
@@ -120,7 +120,7 @@ function About() {
               className=" absolute top-[50%] w-[800px] text-center  left-[50%] z-10
               translate-x-[-50%]  translate-y-[-50%]  font_3 tracking-[2px] 
               font-bold bg-[#fefae0] rounded p-[30px]">
-                <h2 className="text-[30px] font_2 capitalize mb-[20px] ">The finest types of 
+                <h2 className="  sm:text-[25] md:text-[30px] font_2 capitalize mb-[20px] ">The finest types of 
                 <span className=" font_2 text-[30px] min-color  min-color "> coffee</span> beans
                 </h2>
                 <Link to={"/menu"}

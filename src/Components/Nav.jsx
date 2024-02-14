@@ -1,9 +1,29 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 import "../style/header.css";
 function Nav() {
   const [isVisible, setIsVisible] = useState(false);
+
+  const [mobile, setMobile] = useState(false);
+  const [navOpen, setNavOpen] = useState(false);
+  const [activeLinkes, setActiveLinks] = useState("Home");
+
+  const navRef =useRef();
+
+  useEffect(()=> {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setMobile(false)
+        setNavOpen(false)
+      }
+    }
+    window.addEventListener("scroll",handleScroll);
+
+    return ()=> {
+      window.removeEventListener("scroll",handleScroll)
+    }
+  },[])
 
   const handleMouseEnter = () => {
     setIsVisible(true);
@@ -13,9 +33,7 @@ function Nav() {
     setIsVisible(false);
   };
 
-  const [mobile, setMobile] = useState(false);
-  const [navOpen, setNavOpen] = useState(false);
-  const [activeLinkes, setActiveLinks] = useState("Home");
+
 
   function hundleActiveLiks(link) {
     setActiveLinks(link);
@@ -24,13 +42,25 @@ function Nav() {
   function Toggle() {
     setMobile((isopen) => !isopen);
     setNavOpen((navOpen) => !navOpen);
+
   }
+
+  
   return (
-    <nav className=" flex  items-center  ">
-      <ul
-        className={`nav-links ${
-          navOpen === true ? "nav-links " : " nav-links show "
-        }`}
+    <nav 
+      className=" flex  items-center  ">
+      <ul ref={navRef}
+        className={`nav-links 
+        ${
+          navOpen === true ? "show" : " hide"
+        }
+        
+        `
+      
+      
+      }
+
+
       >
         <li
           onClick={() => {
@@ -121,7 +151,7 @@ function Nav() {
       <div onClick={Toggle}>
         <i
           className={`mobile-icon fa-solid ${
-            mobile ? "  fa-bars" : " fa-xmark"
+            mobile ?   " fa-xmark":"  fa-bars" 
           }`}
         ></i>
       </div>

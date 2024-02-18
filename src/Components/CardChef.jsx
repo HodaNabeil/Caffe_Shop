@@ -15,7 +15,7 @@ const handleMouseLeave = () => {
   return (
     <div className=" p-[10px] relative overflow-hidden">
           <div className="box-chef bg-[#faedcd] h-[220px] p-[10px] flex-col text-center rounded-[8px] relative">
-            <p className=" text-[] min-color font-bold">
+            <p className=" text-[15px] md:text-[16px] min-color font-bold">
             {name}
               <span className=" block text-[#c9975e] text-center  ">senior chef </span>
             </p>
@@ -27,7 +27,7 @@ const handleMouseLeave = () => {
                 className="  w-[180px] h-[170px] absolute top-[30%] 
                 left-[50%] translate-x-[-50%]  rounded-[8px] object-cover "
                 src={img}
-                alt="chef"
+                alt={`${name}`}
               />
             </div>
           </div>

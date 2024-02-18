@@ -28,11 +28,11 @@ function DessertMenu() {
 
 
   return (
-    <div className=" bg-[#220100] container ">
+    <div className=" dessert-menu  bg-[#220100] container ">
       <div  className="pt-[20px] pb-[40px] m-auto">
             <h2 
-              className=" font_3  m-[40px] element-center 
-                tracking-[1px]  md:tracking-[2px] text-[22px]  
+              className=" font_3  m-[20px] md:m-[30px] lg:m-[40px] element-center 
+                tracking-[1px]  md:tracking-[2px] text-[24px]  
                 sm:text-[30px]  md:text-[35px] lg:text-[45px] text-[#fff]">
               Enjoy delicious desserts
             </h2>

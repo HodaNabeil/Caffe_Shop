@@ -22,3 +22,9 @@
 .card-why:hover {
   box-shadow: 0px 5px 10px 0 #ad6361;
 }
+
+@media (max-width:330px) {
+  .header-why  {
+    font-size: 16px !important;
+  }
+}

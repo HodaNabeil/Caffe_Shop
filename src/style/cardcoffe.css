@@ -3,13 +3,22 @@
   --mainColor:#220100;
 }
 
+
+.price-btn {
+  color: #fff;
+  background-color: var(--mainColor);
+  padding: 8px 10px;
+  width: fit-content;
+  border-radius: 50px;
+  position: absolute;
+  left: 50%;
+}
 .menu-coffe .card-cofe {
   background-color: #f4e8d64d;
   padding: 20px;
   margin: 15px  ;
   border-radius: 35px;
   position: relative;
-  height: 300px;
   margin-bottom: 40px;
 }
 .menu-coffe .image {
@@ -36,6 +45,9 @@
   .menu-coffe .image {
     padding: 20px;
   }
+  .card-cofe .price-btn {
+      bottom: -15px;
+  }
 }
 .second-color {
   color: #220100a6;
@@ -43,12 +55,6 @@
 
 /* Icon */
 
-
-@media (min-width:767px) and (max-width:795px) {
-  .card-cofe .price-btn {
-    bottom: -80px !important;
-  }
-}
 
 @media (max-width:576px) {
   .container-menu   {
@@ -66,8 +72,8 @@
   }
   .card-cofe .price-btn  {
     font-size: 12px;
-    bottom: -30px !important;
-    margin-left: 64px !important;
+    bottom: -15px !important;
+    padding: 5px 10px !important;
   }
   
 }
@@ -75,15 +81,6 @@
 @media (max-width:444px) {
   .menu-coffe .card-cofe {
     height: 178px !important;
-  }
-  .card-cofe .price-btn  {
-    font-size: 12px;
-    bottom: -24px !important;
-    margin-left: 34px !important;
-  }
-  .card-cofe div:nth-child(3) {
-    display: flex !important;
-    justify-content: flex-start !important;
   }
   .card-cofe .image {
     padding: 10px 0;
@@ -95,3 +92,4 @@
     padding-bottom: 0;
   }
 }
+

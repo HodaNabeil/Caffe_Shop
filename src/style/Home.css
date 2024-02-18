@@ -20,7 +20,7 @@
   cursor: pointer;
 }
 .typecofe .card-type {
-  margin-bottom: 60px;
+  margin-bottom: 90px;
 }
 .typecofe div:nth-child(1) img {
   top: -140px !important;
@@ -29,4 +29,12 @@
 .typecofe div:nth-child(2) img {
   top: -240px !important;
 
+}
+
+@media (min-width:1200px) {
+  .home_page {
+    background-color: #c9975e91 !important;
+    background-image: none;
+  }
+  
 }

@@ -96,8 +96,8 @@ function Login() {
 
               <div
                 className=" text-[#fefae0] bg-[#220100] text-center
-                  rounded-[6px] cursor-pointer
-                  my-[15px] px-[18x]  py-[12px]
+                  rounded-[50px] cursor-pointer
+                  my-[15px] px-[18x]  py-[10px]
                   "
               >
                 <input 

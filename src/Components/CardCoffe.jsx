@@ -2,7 +2,7 @@
 import '../style/cardcoffe.css'
 import Icon from './Icon'
 
-import '../style/cardcoffe.css'
+import "../style/cardcoffe.css"
 
 function CardCoffe({cofe}) {
   return (
@@ -15,9 +15,9 @@ function CardCoffe({cofe}) {
         <p className='second-color font_2 des text-[18px] py-2'>{cofe.description}</p>
       </div>
         <Icon  cofe={ cofe}/>
-      <div className=' relative'>
+
         <p className='price-btn font_2 '>{cofe.price}$</p>
-      </div>
+    
   </div>
   )
 }

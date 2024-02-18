@@ -48,7 +48,7 @@ function CoffeMenu() {
         <div className='container pt-[30px]'>
           <h2 
             className=' flex justify-center items-center 
-            font_2 text-[30px] md:text-[35px]  text-[#fff]  mb-[50px]' >
+            font_2 text-[28px] mt-[30px] sm:mt-0  md:text-[35px]  text-[#fff] mb-[20px] sm:mb-[50px]' >
               The best <span className='ml-[10px]  text-[#220100] font-bold font_3'>coffee</span>
           </h2>
           <BtnFilter setCategory={setCategory}  filterType= {filterType} setFilter={setFilter}/>

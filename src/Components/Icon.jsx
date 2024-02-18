@@ -12,7 +12,7 @@ function Icon({cofe}) {
 
 
   return (
-    <div  className= ' mainColor flex  items-center justify-center  gap-[20px] my-[20px] '>
+    <div  className= ' mainColor flex  items-center justify-center  gap-[20px]  m-[5px] sm:my-[20px] '>
     <button 
       className="add-card"
       onClick={()=> {

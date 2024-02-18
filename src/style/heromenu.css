@@ -71,7 +71,7 @@
   .hero-img-rigth {
     top: 0;
   }
-  .hero-menu  h1 {
+  .hero-menu  h2 {
     font-size: 27px;
   }
   .hero-menu  p {
@@ -90,3 +90,21 @@
       bottom: 17px;
   }
 }
+
+@media (max-width:400px) {
+  .hero-menu {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hero-menu  div:last-child {
+    margin-top: 25px;
+  }
+  .hero-menu  div {
+    width: 100% !important;
+  }
+  .hero-menu  div h2 {
+    text-align: center !important;
+  }
+  .hero-menu  div p:first-child {
+      font-size: 18px !important;
+  }}

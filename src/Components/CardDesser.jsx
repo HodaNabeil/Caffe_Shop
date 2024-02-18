@@ -46,7 +46,7 @@ function CardDesser({product}) {
             
             }
           className={`  bg-[#de9f65] text-[#220100]  
-          cursor-pointer rounded-[50px] w-[40px] h-[40px] 
+          cursor-pointer rounded-[50px] text-[14px] sm:text-[16px] w-[30px] h-[30px]  sm:w-[40px] sm:h-[40px] 
           element-center  text-center  fa-regular fa-heart 
           ${activeColor && 'fa-solid'}`}>
         </i>
@@ -54,23 +54,25 @@ function CardDesser({product}) {
       <div 
         className=" image relative my-[10px]  element-center ">
         <img
-          className="  relative  h-[220px]   w-[100%] rounded-[6px]  object-cover"
+          className="  relative  h-[220px]   sm:w-full   rounded-[6px]  object-cover"
           src={product.image} alt={product.name} />
       </div>
       <div className=" px-[5px]" >
         <h3 
-          className=" mainColor font-bold text-[20px]  uppercase  font_2 "
+          className=" mainColor font-bold  text-[18px] sm:text-[20px]  uppercase  font_2 "
           >
             {product.name}
         </h3>
-        <p className=" font-bold font_2 mainColor text-[22px] my-[10px]">Size</p>
+        <p className=" font-bold font_2 mainColor text-[18px] sm:text-[22px] my-[10px]">Size</p>
       </div>
-      <div className=" px-[5px] flex  element-between ">
+      <div
+       className=" px-[5px] flex    gap-x-2 sm:gap-x-4 md:gap-x-[5px]
+       element-center lg:element-between ">
         {
           product.sizes.map((size ,index)=> {
             return (
               <div  
-                className={` my-[10px]   text-[#250902] text-[17px]  `}
+                className={` my-[10px]   text-[#250902]  text-[15px] sm:text-[17px]  `}
                 onClick={()=> {
                   handleSelectProduct(product.id,size);
                   setPrice(size.price)
@@ -79,7 +81,8 @@ function CardDesser({product}) {
                 > 
                 <p 
                   className={
-                    `cursor-pointer element-center  font-medium w-[60px]  lg:w-[80px]  h-[35px] capitalize 
+                    `cursor-pointer element-center  font-medium 
+                     w-[50px] sm:w-[60px]  lg:w-[80px]  h-[35px] capitalize 
                     mb-[4px] rounded-[4px]  border-[#250902] border-[1px] border-solid
                   
                   ${selectSize[product.id]=== size.id ? 
@@ -100,11 +103,13 @@ function CardDesser({product}) {
       <div   className=" relative px-[5px]  element-between my-[10px]">
         <p 
           className=" font-bold text-[19px]  mainColor">
-          price : <span className=" text-[17px]">{price > 0? `${price}$` :" _ " }</span>
+          price : <span className="  text-[15px] sm:text-[17px]">
+            {price > 0? `${price}$` :" _ " }
+            </span>
         </p>
         <button 
           className={`  add-card mt-[10px]
-          w-[40px]  h-[35px] rounded-[4px] text-[#fefae0]  font-bold 
+                  w-[30px] h-[30px]    sm:w-[40px]  sm:h-[35px] rounded-[4px] text-[#fefae0]  font-bold 
           
           ${price > 0 ? " cursor-pointer bg-[#250902]" : "pointer-events-none bg-[#de9f65]   " }
           `}

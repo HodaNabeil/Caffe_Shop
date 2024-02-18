@@ -4,6 +4,9 @@ import   {Link}from 'react-router-dom';
 import CardTypeCofe from './CardTypeCofe';
 import { useState } from 'react';
 
+
+import "../style/Home.css"
+
 function TypeCofe() {
 
     const [productType,setProductType] =useState([
@@ -23,8 +26,8 @@ function TypeCofe() {
       }
     ])
   return (
-    <div className="  typecofe  container    ">
-        <div  className=' grid sm:grid-cols-2 lg:grid-cols-3  pt-[80px] pb-[70px]  
+    <div className="  typecofe  container  md:mt-[40px]  ">
+        <div  className=' grid sm:grid-cols-2 lg:grid-cols-3  md:pt-[60px] pb-[30px]  
           gap-5 relative '>
           {
             productType.map((product)=>{

@@ -10,7 +10,7 @@ function CounterNumber() {
       <div className=" flex flex-col element-center p-[10px]  ">
         <i
           className="fa-solid fa-star
-            text-[#c4975e] text-[25px] sm:text-[30px] md:text-[45px]  p-[10px] 
+            text-[#c4975e] text-[40px] md:text-[45px]   p-[10px] 
             border  border-transparent duration-[0.3s] 
             transition-all cursor-pointer  border-solid hover:border-[#c4975e]    "
         ></i>
@@ -31,7 +31,7 @@ function CounterNumber() {
       <div className=" flex flex-col element-center p-[10px] ">
         <i
           className="fa-solid fa-trophy     
-          text-[#c4975e] text-[25px] sm:text-[30px] md:text-[45px]  p-[10px] 
+          text-[#c4975e] text-[40px] md:text-[45px]   p-[10px] 
             border  border-transparent duration-[0.3s] 
             transition-all cursor-pointer  border-solid hover:border-[#c4975e]  "
         ></i>
@@ -46,13 +46,13 @@ function CounterNumber() {
           className=" min-color text-center font-bold 
           text-[14px] sm:text-[17px] md:text-[19px] "
         >
-          Winning Awards sed respis unde{" "}
+          Winning Awards sed respis unde
         </p>
       </div>
       <div className=" flex flex-col element-center p-[10px] ">
         <i
           className="fa-solid fa-mug-hot 
-          text-[#c4975e] text-[25px] sm:text-[30px] md:text-[45px]  p-[10px] 
+          text-[#c4975e] text-[40px] md:text-[45px]  p-[10px] 
             border  border-transparent duration-[0.3s] 
             transition-all cursor-pointer  border-solid hover:border-[#c4975e]  "
         ></i>
@@ -73,7 +73,7 @@ function CounterNumber() {
       <div className=" flex flex-col element-center p-[10px] ">
         <i
           className="fa-solid fa-gem  
-          text-[#c4975e] text-[25px] sm:text-[30px] md:text-[45px]  p-[10px] 
+          text-[#c4975e] text-[40px] md:text-[45px]  p-[10px] 
             border  border-transparent duration-[0.3s] 
             transition-all cursor-pointer  border-solid hover:border-[#c4975e]  "
         ></i>

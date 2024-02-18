@@ -53,28 +53,28 @@ function About() {
       </h3>
       <div
         style={{ paddingTop: "50px", paddingBottom: "50px" }}
-        className="container  flex    flex-col   md:flex-row justify-between items-center gap-[20px]"
+        className="container  flex    flex-col   md:flex-row justify-between items-center gap-[40px]  md:gap-[20px]"
       >
         <div className=" relative">
           <img
-            className=" w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] md:w-[300px] md:h-[300px] object-cover rounded-tr-[50px] rounded rounded-es-[50px] "
+            className="  box-img-1 w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] md:w-[300px] md:h-[300px] object-cover rounded-tr-[50px] rounded rounded-es-[50px] "
             src={require(`../IMg/cofe-contact.jpg`)}
             alt="about-img"
           />
 
           <img
-            className="  absolute top-[64px] left-[160px]  w-[120px] h-[120px] sm:w-[180px] sm:h-[180px] md:w-[200px] md:h-[200px] object-cover rounded-tr-[50px] rounded rounded-es-[50px] "
+            className="  box-img-2 absolute top-[64px] left-[160px]  w-[120px] h-[120px] sm:w-[180px] sm:h-[180px] md:w-[184px] md:h-[200px] object-cover rounded-tr-[50px] rounded rounded-es-[50px] "
             src={require(`../IMg/img-about_2.jpg`)}
             alt="about-img"
           />
         </div>
 
-        <div className="w-full md:w-[48%]">
+        <div className=" header-about w-full md:w-[48%]">
           <h2 className=" font_3 tracking-[1px] text-[30px] min-color  font-bold">
             New <span className=" font_3 text-[#8b5112]">coffee</span> founded
             for extraordinary
           </h2>
-          <p className=" w-[450px] md:w-full text-[15px] text-[#382f2f]  mb-[15px]">
+          <p className=" w-full sm:w-[350px]  lg:w-full text-[15px] text-[#382f2f]  mb-[15px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, vero
             ipsum inventore quidem earum sint distinctio enim nemo facilis
             eligendi.
@@ -85,8 +85,8 @@ function About() {
               Natura Coffe Beans
             </h3>
             <div className="flex items-center">
-              <i className="fa-solid fa-mug-hot text-[30px]  relative  text-[#c4975e]"></i>
-              <p className="  w-[450px] md:w-full ml-[5px] text-[#382f2f]">
+              <i className="fa-solid fa-mug-hot mr-3 text-[30px]  relative  text-[#c4975e]"></i>
+              <p  className=" w-[300px] sm:w-[350px] md:w-[450px] lg:w-full text-[15px] text-[#382f2f]  mb-[15px]">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Quaerat aliquam soluta ab inventore aperiam optio omnis error
                 explicabo itaque deleniti!
@@ -98,8 +98,8 @@ function About() {
               100 % ISO Certification
             </h3>
             <div className="flex items-center">
-              <i className="fa-solid fa-cookie text-[30px] relative  text-[#c4975e]"></i>
-              <p className=" w-[450px] md:w-full   ml-[5px] text-[#382f2f]">
+              <i className="fa-solid fa-cookie  mr-3 text-[30px] relative  text-[#c4975e]"></i>
+              <p  className=" w-[300px] sm:w-[350px] md:w-[450px] lg:w-full text-[15px] text-[#382f2f]  mb-[15px]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
                 dolorem accusamus cum quos est laudantium fuga. Laudantium
                 explicabo accusamus hic!
@@ -119,22 +119,23 @@ function About() {
             <div 
               className=" absolute top-[50%] w-[800px] text-center  left-[50%] z-10
               translate-x-[-50%]  translate-y-[-50%]  font_3 tracking-[2px] 
-              font-bold bg-[#fefae0] rounded p-[30px]">
-                <h2 className="  sm:text-[25] md:text-[30px] font_2 capitalize mb-[20px] ">The finest types of 
-                <span className=" font_2 text-[30px] min-color  min-color "> coffee</span> beans
+              font-bold bg-[#fefae0] rounded  p-[20px] sm:p-[30px]">
+                <h2 
+                className="  sm:text-[25px] md:text-[30px] font_2 capitalize  mb-[15px] sm:mb-[20px] ">The finest types of 
+                <span className=" font_2  text-[20px] sm:text-[25px]  md:text-[30px] min-color  min-color "> coffee</span> beans
                 </h2>
                 <Link to={"/menu"}
-                  className=" font_3 text-[20px] py-[10px] px-[12px] text-[#fefae0]
+                  className=" font_3 text-[14px] md:text-[20px]  p-[8px] sm:py-[10px] sm:px-[12px] text-[#fefae0]
                   bg-[#220100]  rounded-[8px]">More</Link>
               </div>
           </div>
 
       <div className=" py-[50px] team">
         <div className=" element-center flex-col ">
-          <h4 className=" font_2  font-extrabold text-[#c4975e] text-[20px] mt-[20px] mb-[10px]">
+          <h4 className=" font_2  font-extrabold text-[#c4975e] text-[18px]  md:text-[20px] mt-[20px] mb-[10px]">
             Experience Team Member
           </h4>
-          <h2 className=" min-color font_2 font-extrabold text-[30px] mb-[20px]">
+          <h2 className=" min-color font_2 font-extrabold text-[23px] md:text-[30px] mb-[20px]">
             Meet Our Professional Chefs
           </h2>
         </div>

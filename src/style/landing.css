@@ -2,21 +2,24 @@
 .landing {
   width: 100%;
   position: relative;
-  padding-bottom: 60px;
-  height: calc(100vh - 95px);
-  padding-top: 100px;
+
+  padding-top: 60px;
+
 }
 @media (max-width:767px) {
+  .landing  {
+    height: 80vh;
+  }
   .landing .landing-img  {
     width: 250px;
   } 
 }
-@media (max-width:577px) {
+@media (max-width:576px) {
   .landing div:first-child h1 {
     font-size: 25px;
   }
   .landing div:first-child button {
-    width: 100px;
+    width: 120px;
     font-weight: normal !important;
     font-size: 14px !important;
     margin:  25px 0 !important ;
@@ -25,4 +28,14 @@
     width: 200px;
   }
 
+}
+
+
+
+@media (min-width:1200px) {
+  .landing {
+    height: 100%;
+    padding: 40px;
+  }
+  
 }

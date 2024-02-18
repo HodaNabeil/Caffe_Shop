@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-
+import "../style/dessertpage.css"
 
 function ButtonDessert({filterDessertsByCategory}) {
 
@@ -20,10 +20,14 @@ function ButtonDessert({filterDessertsByCategory}) {
   return (
   
     <div 
-      className="  text-[#fff] flex justify-center m-auto text-center">
+      className="  text-[#fff]  flex justify-center m-auto text-center">
       <div  
-        className=" font_2   w-[400px]  shadow-[0px_0px_14px_1px_rgba(255,0,0)]
-        bg-[#fff] min-color justify-center flex gapx-[20px] rounded-[50px] px-[12px] py-[10px] ">
+        className="  dessert-filter font_2    w-[380px] md:w-[400px] 
+         shadow-[0px_0px_14px_1px_rgba(255,0,0)]
+        bg-[#fff] min-color justify-center flex gap-x-[5px] sm:gap-x-[10px] 
+
+
+        rounded-[50px] p-[10px] md:p-[12px] lg:p-[14px] ">
         {
           btns.map((btn ,index)=> {
             return <button 
@@ -31,10 +35,11 @@ function ButtonDessert({filterDessertsByCategory}) {
             onClick={()=> {
               handleButtonClick(btn)
             }}
-              className={` block  text-[20px] font-bold   mx-[10px]
+              className={` btn-filter block   text-[17px] sm:text-[20px] font-bold 
+               sm:mx-[0px]
               ${activeButton === btn 
                 ?
-                " bg-[#220100]  px-[10px]  w-fit h-[40px] rounded-[50px] text-[#fff]" 
+                " bg-[#220100]  px-[10px]  w-fit sm:h-[40px] rounded-[50px] text-[#fff]" 
                 : 
                 " "
               }`

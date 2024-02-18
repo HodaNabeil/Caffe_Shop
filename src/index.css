@@ -98,16 +98,7 @@
     border-radius: 50px;
     border: 2px solid transparent;
   }
-  .price-btn {
-    color: #fff;
-    background-color: var(--mainColor);
-    padding: 8px 10px;
-    width: fit-content;
-    border-radius: 50px;
-    position: absolute;
-    bottom: -70px;
-    left: 50%;
-  }
+  
   .element-between {
     display: flex;
     justify-content: space-between;
@@ -128,5 +119,15 @@
 @layer base {
   .mainColor {
     color:  var(--mainColor);
+  }
+}
+
+
+@media (max-width:576px) {
+  .mainbtn {
+    padding: 6px 10px !important; 
+  }
+  .icon-favorite::after  ,.add-card::after  {
+    top: -24px !important;
   }
 }

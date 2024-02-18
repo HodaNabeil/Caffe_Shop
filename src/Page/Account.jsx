@@ -44,16 +44,16 @@ function Account() {
       <div
       
        >
-        <div className=" flex   md:gap-x-[40px]  justify-between sm:flex-col md:flex-row ">
+        <div className=" flex  justify-between sm:flex-col md:flex-row ">
           <div className=" w-full md:w-[40%] ">
-            <div className="  flex-col pt-[50px]">
+            <div className="  relative flex-col pt-[50px]">
               <h3 className="  text-[#fefae0]  px-[15px] tracking-[1px]  mb-[20px] 
               sm:text-[20px]  md:text-[22px] lg:text-[25px] font-bold">
                 Create account
               </h3>
               <div
-                className="element-center gap-x-[8px] mx-[20px] lg:mx-[50px] cursor-pointer py-[8px] px-[12px] 
-                   rounded-[8px] mb-[15px]
+                className="element-center gap-x-[8px] mx-[20px]  cursor-pointer py-[8px] px-[12px] 
+                   rounded-[50px] mb-[15px]
                   border-[1px] border-[#fefae0]  border-solid"
                >
                 <img
@@ -63,15 +63,17 @@ function Account() {
                 />
                 <span className="text-[#fefae0]  "> sign up with google </span>
               </div>
-              <p
-                className=" relative break text-center text-[#fefae0]
-              "
-              >
-                <span className=" z-[4]  relative  uppercase "> Or</span>
-              </p>
-            </div>
-          
-            <form 
+                <div className=" relative  break  mb-[15px]">
+                    <span
+                    className="    block text-center   text-[#fefae0]
+                  "
+                  >
+                    Or
+                  </span>
+                </div>
+
+
+              <form 
               onSubmit={submite}
               action="/" className="p-[15px]">
               <div className=" flex-col  flex mb-[15px] ">
@@ -82,7 +84,7 @@ function Account() {
                   First name*
                 </label>
                 <input
-                  className="  outline-none py-[8px] px-[15px]  
+                  className="  outline-none py-[6px]  sm:py-[8px] px-[15px]  
                   text-[14px] min-color
                   rounded-[6px] "
                   type="text"
@@ -105,7 +107,7 @@ function Account() {
                   Email*
                 </label>
                 <input
-                  className="  outline-none py-[8px] px-[15px]  
+                  className=" outline-none py-[6px]  sm:py-[8px] px-[15px]  
                     text-[14px] min-color
                     rounded-[6px] "
                   type="email"
@@ -128,7 +130,7 @@ function Account() {
                   Password*
                 </label>
                 <input
-                  className="  outline-none py-[8px] px-[15px]  
+                  className=" outline-none py-[6px]  sm:py-[8px] px-[15px]  
                     text-[14px] min-color
                     rounded-[6px] "
                   type="password"
@@ -144,11 +146,11 @@ function Account() {
 
               <div
                 className=" text-[#fefae0] bg-[#220100] text-center
-                  rounded-[6px] cursor-pointer
-                  my-[15px] px-[18x]  py-[12px]"
+                  rounded-[50px] cursor-pointer
+                   my-[10px] sm:my-[15px] px-[18x]  py-[10px] sm:py-[12px]"
               >
                 <input 
-                  className=" tracking-[1px] cursor-pointer 
+                  className=" text-[15px]  sm:text-[16px] tracking-[1px] cursor-pointer 
                    hover:tracking-[4px] duration-[0.3s] transition-all  "
                 type="submit" value={"Create Accounte"} />
               </div>
@@ -160,6 +162,9 @@ function Account() {
                 </Link>
               </p>
             </form>
+            </div>
+          
+    
           </div>
 
           <div className=" container-image  flex-1   flex-grow flex  justify-end">

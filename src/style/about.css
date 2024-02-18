@@ -42,7 +42,7 @@
 .information-chef::after {
   content: "";
   position: absolute;
-  top: -90%;
+  top: -93%;
   left: 50%;
   transform: translateX(-50%);
   background-color: #0000008f;
@@ -57,14 +57,75 @@
   object-fit: cover;
   width: 100%;
   height: 500px;
+  background-repeat: no-repeat;
 }
 .about .slider.overly::after {
   width: 100%;
   height: 500px;
 }
-.about .slider .btnpre {
-  border-radius: 2px 87px 59px 54px;
+
+.about .slider .btn {
+  background-color:#c4975e;
+  width: 40px;
+  height: 40px;
+  position:absolute;
+  top: 50%;
 }
-.about .slider .btnnext {
+.about .slider .btn:first-child {
+  border-radius: 2px 87px 59px 54px;
+left: 0;
+}
+.about .slider .btn:nth-child(2){
   border-radius: 59px 2px 54px 87px;
+  right: 0;
+}
+
+@media (max-width:576px) {
+  
+.about .slider .btn {
+font-size: 14px;
+width: 30px;
+height: 30px;
+padding: 0 10px ;
+}
+}
+
+
+@media (max-width:400px) {
+  .box-img-1{
+    width: 180px;
+    height: 180px;
+  }
+  .box-img-2 {
+    width: 90px;
+    height: 100px !important;
+    left: 135px !important;
+  }
+  .about  .header-about   h2  {
+    font-size: 27px !important;
+
+  }
+  .about  .header-about   h3 {
+    font-size: 20px !important;
+  }
+
+}
+
+@media (max-width:300px) {
+  .about  .header-about   h2  {
+    font-size: 23px !important;
+  }
+
+    .container-video h2  {
+        font-size: 12px;
+    }
+
+    .container-video h2 span {
+      font-size: 13px;
+    }
+
+    .container-video a {
+      font-size: 10px;
+    }
+
 }

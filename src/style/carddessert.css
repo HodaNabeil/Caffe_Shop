@@ -34,3 +34,17 @@
   left: -60px;
 }
 
+
+@media (max-width:576px) {
+
+  .box-dessert .image img {
+    width: 85% !important;
+  }
+  .box-dessert .image:hover::after  {
+    width: 85% !important;
+  }
+  .box-dessert .icon-favorite {
+    right: 14px !important;
+  }
+}
+

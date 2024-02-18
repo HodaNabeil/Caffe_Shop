@@ -132,7 +132,7 @@ function Nav() {
             }`}
             to={"/contact"}
           >
-            Cotact
+            Contact
           </Link>
         </li>
         <li

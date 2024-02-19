@@ -16,7 +16,7 @@ function LandingDessertPage() {
                 The most delicious and 
                 best sweets
               </h2>
-              <Link to={'/'} 
+              <Link to={'/dessert'} 
                 className=" block font_3  relative bg-transparent    left-[50%]  
                 translate-x-[-50%] sm:translate-x-0  pt-[4px] pb-[6px] px-[8px]   text-center
                 w-[100px] sm:w-[120px] md:w-[160px]  text-[18px] sm:text-[20px] md:text-[25px]

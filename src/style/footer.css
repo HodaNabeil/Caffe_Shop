@@ -9,9 +9,10 @@
   color: var(--mainColor);
   font-weight: bold;
 font-size: 20px;
+text-transform: capitalize;
 }
 
-@media (min-width:767px) and (max-width:992px) {
+@media (max-width:767px) {
   .footer  h3 {
     font-size: 18px;
   }
@@ -25,7 +26,7 @@ font-size: 20px;
   display: block;
   padding: 4px 0;
 }
-@media (min-width:767px) and (max-width:992px) {
+@media (max-width:767px) {
   .footer  > div a{
     font-size: 15px;
   }

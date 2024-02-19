@@ -10,6 +10,7 @@ import BtnFilter from '../Components/BtnFilter'
 import CardCoffe from '../Components/CardCoffe'
 import WhyUs from '../Components/WhyUs'
 import Footer from '../Components/Footer'
+import ScrollTopButton from '../Components/ScrollTopButton'
 
 
 function CoffeMenu() {
@@ -40,8 +41,8 @@ function CoffeMenu() {
   },[coffemenu])
 
   return (
-    <div>
-    <div className='menu-backgouned menu-coffe '>
+    <div className=' relative'>
+    <div className='menu-backgouned menu-coffe  '>
       <div className='background-blur '>
         <Header />
         <HeroMenu/>
@@ -71,6 +72,7 @@ function CoffeMenu() {
         <Footer/>
       </div>
     </div> 
+    <ScrollTopButton/>
   </div>
   )
 }

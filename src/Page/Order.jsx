@@ -11,6 +11,8 @@ import LeftOrderPage from '../Components/LeftOrderPage';
 import { clearProduct} from '../Store/Slices/Card';
 import { useDispatch, useSelector } from 'react-redux';
 
+import ScrollTopButton from "../Components/ScrollTopButton";
+
 
 import '../style/order.css'
 
@@ -32,7 +34,7 @@ function Order() {
     <div >
         <div  className=' container page-order    '>
             <h2
-              className=' p-[30px] tracking-[2px] flex justify-center m-auto font_3 
+              className='  p-[30px] tracking-[2px] flex justify-center m-auto font_3 
                 text-[#f9d6b5] text-[35px]  md:text-[40px]'>
                 Your  <span className= 'font_3 text-[#fedcba] '> order </span> is read
             </h2>
@@ -54,6 +56,7 @@ function Order() {
       <div className='home_page'>
         <Footer/>
       </div>
+      <ScrollTopButton/>
     </div>
   )
 }

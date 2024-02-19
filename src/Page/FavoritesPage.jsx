@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { removeFromFavorites } from "../Store/Slices/FavoritesSlice";
-
+import ScrollTopButton from "../Components/ScrollTopButton";
 import Footer from "../Components/Footer";
 import "../style/favorites.css";
 import { useState } from "react";
@@ -13,12 +13,10 @@ function FavoritesPage() {
   const [price, setPrice] = useState(null);
 
 
-  const [eventAdd ,setEventAdd]=useState(false)
   const [selectSize, setSelectSize] = useState({});
   const [selectProduct, setSelectProduct] = useState({});
 
 
-  console.log(selectProduct)
 
   const handleSelectProduct = (productId, size) => {
     setSelectProduct({
@@ -41,7 +39,7 @@ function FavoritesPage() {
   return favorites.length > 0 ? (
     <div className="bg-[#fefae0]   favorites-container   ">
       <h3 className=" element-center min-color text-[30px] font_2 py-[40px] relative">
-        Favorites{" "}
+        Favorites
         <i className="fa-solid fa-heart  ml-[15px] min-color text-[20px]"></i>
       </h3>
 
@@ -63,14 +61,13 @@ function FavoritesPage() {
               <h4 className="min-color font_2 text-[20px] mt-[10px]">
                 {item.name}
               </h4>
-              <div className=" flex   items-center gap-x-[15px] m-[10px]">
+              <div className=" flex   items-center gap-x-[15px] py-[20px]">
                 {item.sizes &&
                   item.sizes.map((size, sizeIndex) => (
                     <div
                       onClick={() => {
                         handleSelectProduct(item.id, size);
                         setPrice(size.price);
-                      
                       }}
                       className={`cursor-pointer element-center  font-medium 
                               w-[50px] sm:w-[60px]  lg:w-[70px]  h-[30px] capitalize 
@@ -107,17 +104,19 @@ function FavoritesPage() {
                       })
                     );
                   }}
-                  className={`
-                p-[10px] rounded-[10px] 
-                w-[50px] h-[30px] bg-[#220100] element-center
-                  pointer-events-none
-
-
-                `}
+                  className={`add-card
+                    p-[10px] rounded-[10px] 
+                    w-[50px] h-[30px] bg-[#220100] element-center
+                         cursor-pointer
+                      ${
+                        selectSize[item.id] ? " pointer-events-auto bg-[#de9f65] text-[#fefae0] " : "  pointer-events-none"
+                      }
+          
+                  `}
                 >
                   <i 
-                  className={`
-                  fa-solid fa-plus  first-letter:text-[15px]  element-center text-[#fefae0]
+                  className={` 
+                  fa-solid fa-plus   text-[15px]  element-center text-[#fefae0]
                   `}></i>
                 </div>
               </div>
@@ -128,6 +127,7 @@ function FavoritesPage() {
       <div className=" pt-[70px]  bg-[#fefae0]  ">
         <Footer />
       </div>
+      <ScrollTopButton/>
     </div>
   ) : (
     <div className="bg-[#fefae0] main-height-screen  w-full   relative ">

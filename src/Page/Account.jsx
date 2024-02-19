@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import "../style/account.css";
 import { useState } from "react";
-import Footer from "../Components/Footer"
+import Footer from "../Components/Footer";
 
+import ScrollTopButton from "../Components/ScrollTopButton";
 function Account() {
   const [name,setName]=useState("");
   const[password,setpassword] =useState("");
@@ -179,9 +180,10 @@ function Account() {
       </div>
 
 
-                    <div className=" mt-[50px]">
-                    <Footer/>
-                    </div>
+        <div className=" mt-[50px]">
+        <Footer/>
+        </div>
+        <ScrollTopButton/>
     </div>
   );
 }

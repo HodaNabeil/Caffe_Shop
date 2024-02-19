@@ -1,6 +1,7 @@
 
 import "../style/contact.css"
 import Footer from "../Components/Footer"
+import ScrollTopButton from '../Components/ScrollTopButton'
 
 function Cantact() {
   const icons = [
@@ -115,6 +116,8 @@ function Cantact() {
         <div className=" pt-[50px]">
           <Footer/>
         </div>
+
+        <ScrollTopButton/>
     </div>
   )
 }

@@ -1,8 +1,9 @@
 import DessertMenu from "../Components/DessertMenu"
 import LandingDessertPage from "../Components/LandingDessertPage"
 
-import Footer from '../Components/Footer'
+import Footer from "../Components/Footer"
 import WhyDesser from "../Components/WhyDesser"
+import ScrollTopButton from "../Components/ScrollTopButton"
 function DessertPage() {
   return (
     <div>
@@ -10,7 +11,7 @@ function DessertPage() {
       <DessertMenu/>
       <WhyDesser/>
       <Footer/>
-  
+      <ScrollTopButton/>
     </div>
   )
 }

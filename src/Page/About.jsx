@@ -4,6 +4,8 @@ import CounterNumber from "../Components/CounterNumber";
 import "../style/about.css";
 import Slider from "../Components/Slider";
 
+import ScrollTopButton from "../Components/ScrollTopButton";
+
 
 import Footer from "../Components/Footer"
 import client1 from '../IMg/client_1.jpg'
@@ -154,6 +156,8 @@ function About() {
         </div>
       
       <Footer/>
+
+      <ScrollTopButton/>
     </div>
   );
 }

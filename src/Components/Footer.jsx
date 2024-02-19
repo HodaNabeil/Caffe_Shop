@@ -11,7 +11,7 @@ function Footer() {
              md:grid-cols-4  w-full sm:gap-x-5 md:gap-x-7  ">
         <div >
           <Logo/>
-          <div className=" flex  justify-start gap-x-[10px] items-center  my-[40px]">
+          <div className=" flex  justify-start gap-x-[10px] items-center mt-[20px] sm:my-[40px]">
             <a href="/">
               <i className=" text-[30px]  cursor-pointer text-[#220100d4]  fa-brands fa-instagram"></i>
             </a>

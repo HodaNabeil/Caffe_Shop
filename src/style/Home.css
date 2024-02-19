@@ -8,6 +8,7 @@
   max-width: 1640px;
   margin: auto;
 
+  position: relative;
 }
 
 :root {

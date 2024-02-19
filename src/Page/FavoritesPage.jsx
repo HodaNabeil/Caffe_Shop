@@ -58,10 +58,10 @@ function FavoritesPage() {
                   alt={item.name}
                 />
               </div>
-              <h4 className="min-color font_2 text-[20px] mt-[10px]">
+              <h4 className="min-color font_2 text-[20px] my-[10px]">
                 {item.name}
               </h4>
-              <div className=" flex   items-center gap-x-[15px] py-[20px]">
+              {/* <div className=" flex   items-center gap-x-[15px] py-[20px]">
                 {item.sizes &&
                   item.sizes.map((size, sizeIndex) => (
                     <div
@@ -74,7 +74,7 @@ function FavoritesPage() {
                               mb-[4px] rounded-[4px]  border-[#250902] border-[1px] border-solid
 
 
-                              ${selectSize[item.id]===size.id ? "bg-[#de9f65] text-[#fefae0] border-[#de9f65] " : " "} 
+                              ${selectSize[item.id]===size.id || item !== item[size] ? "bg-[#de9f65] text-[#fefae0] border-[#de9f65] " : " "} 
                       `}
                       key={sizeIndex}
                     >
@@ -82,7 +82,7 @@ function FavoritesPage() {
                       <h4 className="  hidden">{size.price}</h4>
                     </div>
                   ))}
-              </div>
+              </div> */}
               <div className=" flex gap-x-3  my-[20px]
                absolute bottom-[-30px] translate-x-[-50%] left-[50%] ">
                 <div
@@ -94,7 +94,7 @@ function FavoritesPage() {
                   <i className="fa-solid fa-xmark text-[#fefae0] text-[15px] cursor-pointer element-center"></i>
                 </div>
 
-                <div
+                {/* <div
                   onClick={() => {
                     disptach(
                       dassertAddToCard({
@@ -118,7 +118,7 @@ function FavoritesPage() {
                   className={` 
                   fa-solid fa-plus   text-[15px]  element-center text-[#fefae0]
                   `}></i>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

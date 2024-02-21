@@ -18,6 +18,7 @@
   font-family: 'Roboto';
   list-style: none;
   text-decoration: none;
+  -webkit-top-highlight-color: transparent;
 }
 
 .container {

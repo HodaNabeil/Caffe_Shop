@@ -91,6 +91,9 @@
 
 /* Custom Mobeil media */
 @media (max-width: 768px) {
+  .header .logo {
+    color:#fefae0
+  }
   .header {
     padding: 10px 60px 10px 10px;
   }

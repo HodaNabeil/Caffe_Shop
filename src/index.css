@@ -6,7 +6,6 @@
   @tailwind components;
   @tailwind utilities;
 
-
   :root {
     --mainColor:#220100;
   }
@@ -26,8 +25,6 @@
   margin: 0 auto;
   max-width: 1640px;
 }
-
-
 @media (max-width:768px) {
   
 .container {

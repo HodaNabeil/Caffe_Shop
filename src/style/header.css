@@ -91,7 +91,7 @@
 
 /* Custom Mobeil media */
 @media (max-width: 768px) {
-  .header .logo {
+  .header .logo h4 {
     color:#fefae0
   }
   .header {

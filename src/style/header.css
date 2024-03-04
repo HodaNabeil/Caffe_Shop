@@ -4,7 +4,7 @@
 .header {
   max-width: 1640px;
   margin: auto;
-  padding: 10px 20px;
+  padding: 10px 50px;
   background: transparent;
   display: flex;
   justify-content: space-between;
@@ -58,6 +58,7 @@
   transition: 0.4s ease-in-out;
 }
 
+
 .nav-right > a:hover i {
   color: #220100;
 }
@@ -91,11 +92,15 @@
 
 /* Custom Mobeil media */
 @media (max-width: 768px) {
-  .header .logo h4 {
-    color:#ffffff
-  }
   .header {
-    padding: 10px 60px 10px 10px;
+    padding:10px 40px;
+  }
+  .nav-right {
+    position: relative;
+    right: 40px;
+  }
+  .header .logo h4 ,  .header .logo span {
+    color:#ffffff
   }
   .header .nav-links {
     display: none;
@@ -131,7 +136,7 @@
   .mobile-icon {
     display: block;
     position: absolute;
-    right: 20px;
+    right: 40px;
     top: 34px;
   }
   .header .nav-link:hover::before {

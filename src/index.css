@@ -19,19 +19,18 @@
   text-decoration: none;
   -webkit-top-highlight-color: transparent;
 }
-
+/* Start Container  */
 .container {
-  padding: 0 20px;
+  padding: 0 50px;
   margin: 0 auto;
   max-width: 1640px;
 }
 @media (max-width:768px) {
-  
-.container {
-  padding: 0 20px;
+  .container {
+    padding: 0 40px;
+  }
 }
-
-}
+/* End Container  */
 .font_2 {
   font-family: "Kaushan Script";
 }

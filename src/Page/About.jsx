@@ -132,7 +132,7 @@ function About() {
               </div>
           </div>
 
-      <div className=" py-[50px] team">
+      <div className=" py-[50px] container  team">
         <div className=" element-center flex-col ">
           <h4 className=" font_2  font-extrabold text-[#c4975e] text-[18px]  md:text-[20px] mt-[20px] mb-[10px]">
             Experience Team Member

@@ -42,7 +42,7 @@
 .information-chef::after {
   content: "";
   position: absolute;
-  top: -93%;
+  top: -92%;
   left: 50%;
   transform: translateX(-50%);
   background-color: #0000008f;

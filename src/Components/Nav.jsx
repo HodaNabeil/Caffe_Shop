@@ -5,25 +5,27 @@ import "../style/header.css";
 function Nav() {
   const [isVisible, setIsVisible] = useState(false);
 
-  const [mobile, setMobile] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
   const [activeLinkes, setActiveLinks] = useState("Home");
 
   const navRef =useRef();
 
-  useEffect(()=> {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setMobile(false)
-        setNavOpen(false)
+  useEffect(() => {
+    const handleClikOutSide = (e) => {
+      if (navOpen) {
+        if (!e.target.closest(".nav-links") && !e.target.closest(".mobile-icon")) {
+          setNavOpen(false);
+        
+        }
       }
-    }
-    window.addEventListener("scroll",handleScroll);
-
-    return ()=> {
-      window.removeEventListener("scroll",handleScroll)
-    }
-  },[])
+    
+    };
+    window.addEventListener("click", handleClikOutSide);
+    return () => {
+      window.removeEventListener("click", handleClikOutSide);
+    };
+  }, [navOpen]);
+  
 
   const handleMouseEnter = () => {
     setIsVisible(true);
@@ -33,19 +35,14 @@ function Nav() {
     setIsVisible(false);
   };
 
-
-
   function hundleActiveLiks(link) {
     setActiveLinks(link);
   }
-
   function Toggle() {
-    setMobile((isopen) => !isopen);
-    setNavOpen((navOpen) => !navOpen);
 
+    setNavOpen((navOpen) => !navOpen);
   }
 
-  
   return (
     <nav 
       className=" flex  items-center  ">
@@ -56,11 +53,7 @@ function Nav() {
         }
         
         `
-      
-      
       }
-
-
       >
         <li
           onClick={() => {
@@ -99,7 +92,6 @@ function Nav() {
             }}
           >
             <Link
-
               className={` menu   nav-link ${
                 activeLinkes === "Coffe" ? "active" : " "
               }`}
@@ -112,7 +104,6 @@ function Nav() {
             onClick={() => {
               hundleActiveLiks("Dessert");
             }}
-    
           >
             <Link 
                     className={` menu nav-link ${
@@ -148,13 +139,15 @@ function Nav() {
           </Link>
         </li>
       </ul>
-      <div onClick={Toggle}>
+    <div>
+    <div  className=" btn-toggle" onClick={Toggle}>
         <i
           className={`mobile-icon fa-solid ${
-            mobile ?   " fa-xmark":"  fa-bars" 
+             navOpen === true ?  " fa-xmark":"  fa-bars" 
           }`}
         ></i>
       </div>
+    </div>
     </nav>
   );
 }

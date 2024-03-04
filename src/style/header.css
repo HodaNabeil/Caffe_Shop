@@ -144,7 +144,7 @@
   }
   .menu-container {
     top: 135px;
-    left: 20px;
+    left: 30px;
     background-color: #fefae0;
   }
   .menu-container  li a  {
@@ -180,6 +180,15 @@
 
 
 @media (max-width:576px) {
+  .header {
+    padding: 10px 20px ;
+  }
+  .nav-right {
+    right: 30px;
+  }
+  .mobile-icon {
+    right: 20px;
+  }
   
 .header .logo  span {
 display: none;

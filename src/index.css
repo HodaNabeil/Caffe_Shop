@@ -30,6 +30,12 @@
     padding: 0 30px;
   }
 }
+@media (max-width:576px) {
+  .container {
+    padding: 0 20px;
+  }
+}  
+
 /* End Container  */
 .font_2 {
   font-family: "Kaushan Script";

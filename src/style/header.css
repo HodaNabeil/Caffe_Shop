@@ -93,7 +93,7 @@
 /* Custom Mobeil media */
 @media (max-width: 768px) {
   .header {
-    padding:10px 40px;
+    padding:10px 30px;
   }
   .nav-right {
     position: relative;
